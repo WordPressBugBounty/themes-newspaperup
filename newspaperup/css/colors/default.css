@@ -458,7 +458,7 @@ input[type="submit"]:hover, button:hover, input[type="submit"]:focus, button:foc
 	background: var(--grady-color);
 	color: #fff;
 }
-.wp-block-latest-posts li a, .wp-block-categories-list li a, .wp-block-categories__list li a, .wp-block-archives-list li a, .bs-sidebar .bs-widget .wp-block-latest-posts li a, .bs-sidebar .bs-widget .wp-block-categories-list li a, .bs-sidebar .bs-widget .wp-block-categories__list li a, .bs-sidebar .bs-widget .wp-block-archives-list li a {
+.wp-block-latest-posts li a, .wp-block-categories-list li a, .wp-block-categories__list li a, .wp-block-archives-list li a, .bs-sidebar .bs-widget .wp-block-latest-posts li a, .bs-sidebar .bs-widget .wp-block-categories-list li a, .bs-sidebar .bs-widget .wp-block-categories__list li a, .bs-sidebar .bs-widget .wp-block-archives-list li a, .bs-sidebar .bs-widget.widget_categories li a, .bs-sidebar .bs-widget.widget_archive ul li a, .bs-sidebar .bs-widget.widget_recent_entries li a{
 	color: var(--stext-color);
 }
 .small.single .wp-block-latest-posts li a:hover, .small.single .wp-block-categories-list li a:hover, .small.single .wp-block-categories__list li a:hover, .small.single .wp-block-archives-list li a:hover {

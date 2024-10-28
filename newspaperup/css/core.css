@@ -3640,6 +3640,13 @@ textarea#comment {
   transform: rotate(-45deg);
 }
 
+.bs-widget ul li {
+  padding: 4px 0;
+  position: relative;
+  transition: all 0.4s ease-in-out 0s;
+  margin: 0 0 10px;
+}
+
 .sidebar-right #sidebar-right {
   padding-left: 30px;
 }
@@ -3878,20 +3885,20 @@ textarea#comment {
   text-decoration: underline;
 }
 
-.wp-block-latest-posts li, .wp-block-categories-list li, .wp-block-categories__list li, .wp-block-archives-list li,
-.bs-widget .wp-block-latest-posts li, .bs-widget .wp-block-categories-list li, .bs-widget .wp-block-categories__list li, .bs-widget .wp-block-archives-list li, .wp-block-latest-comments li {
+.wp-block-latest-posts li, .wp-block-categories-list li, .wp-block-categories__list li, .wp-block-archives-list li, .widget_categories li, .bs-widget.widget_categories li, .bs-widget.widget_recent_entries li,
+.bs-widget .wp-block-latest-posts li, .bs-widget .wp-block-categories-list li, .bs-widget .wp-block-categories__list li, .bs-widget .wp-block-archives-list li, .bs-sidebar .bs-widget.widget_archive ul li, .wp-block-latest-comments li {
   padding: 12px 0;
   border-width: 0 0 1px 0;
   border-style: solid;
   display: flex;
   align-items: flex-start;
 }
-.wp-block-latest-posts li a, .wp-block-categories-list li a, .wp-block-categories__list li a, .wp-block-archives-list li a,
-.bs-widget .wp-block-latest-posts li a, .bs-widget .wp-block-categories-list li a, .bs-widget .wp-block-categories__list li a, .bs-widget .wp-block-archives-list li a, .wp-block-latest-comments li a {
+.wp-block-latest-posts li a, .wp-block-categories-list li a, .wp-block-categories__list li a, .wp-block-archives-list li a, .widget_categories li a, .bs-widget.widget_categories li a, .bs-widget.widget_recent_entries li a,
+.bs-widget .wp-block-latest-posts li a, .bs-widget .wp-block-categories-list li a, .bs-widget .wp-block-categories__list li a, .bs-widget .wp-block-archives-list li a, .bs-sidebar .bs-widget.widget_archive ul li a, .wp-block-latest-comments li a {
   flex: 1;
 }
-.wp-block-latest-posts li::before, .wp-block-categories-list li::before, .wp-block-categories__list li::before, .wp-block-archives-list li::before,
-.bs-widget .wp-block-latest-posts li::before, .bs-widget .wp-block-categories-list li::before, .bs-widget .wp-block-categories__list li::before, .bs-widget .wp-block-archives-list li::before, .wp-block-latest-comments li::before {
+.wp-block-latest-posts li::before, .wp-block-categories-list li::before, .wp-block-categories__list li::before, .wp-block-archives-list li::before, .widget_categories li::before, .bs-widget.widget_categories li::before, .bs-widget.widget_recent_entries li::before,
+.bs-widget .wp-block-latest-posts li::before, .bs-widget .wp-block-categories-list li::before, .bs-widget .wp-block-categories__list li::before, .bs-widget .wp-block-archives-list li::before, .bs-sidebar .bs-widget.widget_archive ul li::before, .wp-block-latest-comments li::before {
   content: "\f07c";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -3915,27 +3922,27 @@ textarea#comment {
   content: "\f27a";
 }
 
-.wp-block-categories-list li::before, .wp-block-categories__list li::before, .bs-widget .wp-block-categories-list li::before, .bs-widget .wp-block-categories__list li::before {
+.wp-block-categories-list li::before, .wp-block-categories__list li::before, .bs-widget .wp-block-categories-list li::before, .bs-widget .wp-block-categories__list li::before, .widget_categories li::before, .bs-widget.widget_categories li::before {
   content: "\f3ca";
   font-family: "Font Awesome 6 Brands";
   font-weight: 500;
 }
 
-.bs-widget .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image, .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date, .wp-block-latest-posts__post-excerpt), .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image, .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date, .wp-block-latest-posts__post-excerpt) {
+.bs-widget .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image, .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date, .wp-block-latest-posts__post-excerpt), .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image, .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date, .wp-block-latest-posts__post-excerpt), .bs-widget.widget_recent_entries li:has(.wp-block-latest-posts__featured-image, .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date, .wp-block-latest-posts__post-excerpt) {
   display: block;
 }
-.bs-widget .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image)::before, .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image)::before {
+.bs-widget .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image)::before, .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image)::before, .bs-widget.widget_recent_entries li:has(.wp-block-latest-posts__featured-image)::before {
   display: none;
 }
-.bs-widget .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image) .wp-block-latest-posts__post-title, .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image) .wp-block-latest-posts__post-title {
+.bs-widget .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image) .wp-block-latest-posts__post-title, .wp-block-latest-posts li:has(.wp-block-latest-posts__featured-image) .wp-block-latest-posts__post-title, .bs-widget.widget_recent_entries li:has(.wp-block-latest-posts__featured-image) .wp-block-latest-posts__post-title {
   font-weight: 500;
   font-size: 17px;
 }
-.bs-widget .wp-block-latest-posts li .wp-block-latest-posts__featured-image:has(.attachment-large.size-large) + .wp-block-latest-posts__post-title, .wp-block-latest-posts li .wp-block-latest-posts__featured-image:has(.attachment-large.size-large) + .wp-block-latest-posts__post-title {
+.bs-widget .wp-block-latest-posts li .wp-block-latest-posts__featured-image:has(.attachment-large.size-large) + .wp-block-latest-posts__post-title, .wp-block-latest-posts li .wp-block-latest-posts__featured-image:has(.attachment-large.size-large) + .wp-block-latest-posts__post-title, .bs-widget.widget_recent_entries li .wp-block-latest-posts__featured-image:has(.attachment-large.size-large) + .wp-block-latest-posts__post-title {
   font-size: 22px;
   font-weight: 600;
 }
-.bs-widget .wp-block-latest-posts li::before, .wp-block-latest-posts li::before {
+.bs-widget .wp-block-latest-posts li::before, .wp-block-latest-posts li::before, .bs-widget.widget_recent_entries li::before {
   content: "\f00b";
 }
 
