@@ -3,7 +3,7 @@
   
 global $post; 
 $post_id = get_the_ID();
-$post_image_type = get_post_meta( $post_id, 'post_image_type', true);
+$post_image_type = 'list-blog';
 $url = newspaperup_get_freatured_image_url($post->ID, 'newspaperup-medium');
 $post_blog_class = !empty($url) ? 'bs-blog-post ' : 'bs-blog-post no-img '; ?>
 

@@ -50,9 +50,6 @@ if ( ! class_exists( 'Newspaperup_Theme_Setup' ) ) :
 			// Add theme supports.
 			add_action('after_setup_theme', array( $this, 'setup' ), 10 );
 
-			// Update post meta after theme switch.
-			add_action('after_switch_theme', array( $this, 'after_switch_to_newspaperup' ));
-
 			// Replace Custom Logo class
 			add_filter('get_custom_logo' ,array( $this, 'newspaperup_logo_class' ));
 
@@ -74,21 +71,7 @@ if ( ! class_exists( 'Newspaperup_Theme_Setup' ) ) :
 			// Enqueue User Custom styles
 			add_action( 'wp_enqueue_scripts', array( $this, 'newspaperup_range_style' )  );
 
-		} 
-
-		public function after_switch_to_newspaperup(){
-			$custom_posts = get_posts(
-				array(
-					'post_type' => 'post', 
-					'numberposts' => -1
-				)
-			);       
-
-			foreach ($custom_posts as $post) {         
-				update_post_meta($post->ID, 'post_image_type', 'list-blog');
-			}
 		}
-
 
 		public function newspaperup_logo_class($html){
 			$html = str_replace('custom-logo-link', 'navbar-brand', $html);
