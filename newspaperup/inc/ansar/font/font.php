@@ -7,12 +7,12 @@ add_action( 'enqueue_block_editor_assets', 'newspaperup_theme_fonts',1 );
 add_action( 'customize_preview_init', 'newspaperup_theme_fonts', 1 );
 
 function newspaperup_theme_fonts() {
-        $fonts_url = newspaperup_fonts_url();
-        // Load Fonts if necessary.
-        if ( $fonts_url ) {
-            require_once get_theme_file_path( 'inc/ansar/font/wptt-webfont-loader.php' );
-            wp_enqueue_style( 'newspaperup-theme-fonts', wptt_get_webfont_url( $fonts_url ), array(), '20201110' );
-        }
+    $fonts_url = newspaperup_fonts_url();
+    // Load Fonts if necessary.
+    if ( $fonts_url ) {
+        require_once get_theme_file_path( 'inc/ansar/font/wptt-webfont-loader.php' );
+        wp_enqueue_style( 'newspaperup-theme-fonts', wptt_get_webfont_url( $fonts_url ), array(), '20201110' );
+    }
 }
 
 function newspaperup_fonts_url() {

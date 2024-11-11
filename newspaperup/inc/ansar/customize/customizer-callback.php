@@ -17,42 +17,35 @@ if (!function_exists('newspaperup_main_banner_section_status')) :
      *
      * @return bool Whether the control is active to the current preview.
      */
-    function newspaperup_main_banner_section_status($control)
-    {
-
+    function newspaperup_main_banner_section_status($control) {
         if (true == $control->manager->get_setting('show_main_banner_section')->value()) {
             return true;
         } else {
             return false;
         }
-
     }
 
 endif;
 if (!function_exists('newspaperup_menu_subscriber_section_status')) :
 
-    function newspaperup_menu_subscriber_section_status($control)
-    {
+    function newspaperup_menu_subscriber_section_status($control) {
         if ($control->manager->get_setting('newspaperup_menu_subscriber')->value() == true) {
             return true;
         } else {
             return false;
         }
-
     }
 
 endif;
 
 if (!function_exists('newspaperup_blog_content_status')) :
 
-    function newspaperup_blog_content_status($control)
-    {
+    function newspaperup_blog_content_status($control) {
         if ($control->manager->get_setting('newspaperup_blog_content')->value() == 'excerpt') {
             return true;
         } else {
             return false;
         }
-
     }
 
 endif;

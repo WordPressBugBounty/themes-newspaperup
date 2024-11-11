@@ -1,7 +1,6 @@
 <?php 
 if (!function_exists('newspaperup_main_content')) :
-    function newspaperup_main_content()
-    { 
+    function newspaperup_main_content() { 
         $content_layout = (newspaperup_get_option('newspaperup_archive_page_layout'));
         $blog_post_layout = (get_theme_mod('blog_post_layout','list-layout'));
       
@@ -45,8 +44,7 @@ endif;
 add_action('newspaperup_action_main_content_layouts', 'newspaperup_main_content', 40);
 
 if (!function_exists('newspaperup_single_main_content')) :
-    function newspaperup_single_main_content()
-    { 
+    function newspaperup_single_main_content() { 
         $single_content_layout = (get_theme_mod('newspaperup_single_page_layout','single-align-content-right'));
 
         if($single_content_layout == "single-align-content-left") { ?>

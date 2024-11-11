@@ -6,7 +6,6 @@
      *
      */
     function newspaperup_header_type_section(){
-
         newspaperup_header_default_section();
     }
 endif;

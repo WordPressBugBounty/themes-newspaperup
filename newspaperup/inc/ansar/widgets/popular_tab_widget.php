@@ -4,8 +4,7 @@ class Popular_Tab_Widget extends Newspaperup_Widget_Base {
 	/**
 	 * Widget constructor.
 	 */
-	function __construct()
-	{
+	function __construct() {
 		$this->text_fields = array('newspaperup-tabbed-popular-posts-title', 'newspaperup-tabbed-latest-posts-title', 'newspaperup-tabbed-categorised-posts-title', 'newspaperup-excerpt-length', 'newspaperup-posts-number');
 
 		$this->select_fields = array('newspaperup-show-excerpt', 'newspaperup-enable-categorised-tab', 'newspaperup-select-category');
@@ -26,11 +25,9 @@ class Popular_Tab_Widget extends Newspaperup_Widget_Base {
 	 * @param array $instance Saved values from database.
 	 */
 
-	public function widget($args, $instance)
-	{
+	public function widget($args, $instance) {
 		$instance = parent::newspaperup_sanitize_data($instance, $instance);
-		$tab_id = 'tabbed-' . $this->number;
-
+		$tab_id = 'tabbed-' . $this->number; 
 
 		/** This filter is documented in wp-includes/default-widgets.php */
 
@@ -86,16 +83,13 @@ class Popular_Tab_Widget extends Newspaperup_Widget_Base {
 	 *
 	 * @param array $instance Previously saved values from database.
 	 */
-	public function form($instance)
-	{
+	public function form($instance)	{
 		$this->form_instance = $instance;
 		$enable_categorised_tab = array(
 			'true' => __('Yes', 'newspaperup'),
 			'false' => __('No', 'newspaperup')
 
 		);
-
-
 
 		// generate the text input for the title of the widget. Note that the first parameter matches text_fields array entry
 		?><h4><?php _e('Latest Posts', 'newspaperup'); ?></h4><?php
@@ -111,8 +105,6 @@ class Popular_Tab_Widget extends Newspaperup_Widget_Base {
 			echo parent::newspaperup_generate_select_options('newspaperup-enable-categorised-tab', __('Enable Categorised Tab', 'newspaperup'), $enable_categorised_tab);
 			echo parent::newspaperup_generate_text_input('newspaperup-tabbed-categorised-posts-title', __('Title', 'newspaperup'), __('Trending', 'newspaperup'));
 			echo parent::newspaperup_generate_select_options('newspaperup-select-category', __('Select category', 'newspaperup'), $categories);
-
 		}
-
 	}
 }

@@ -13,8 +13,7 @@
  *
  * @see WP_Customize_Control
  */
-class newspaperup_Simple_Notice_Custom_Control extends WP_Customize_Control
-{
+class newspaperup_Simple_Notice_Custom_Control extends WP_Customize_Control {
     /**
      * The type of control being rendered
      */
@@ -23,8 +22,7 @@ class newspaperup_Simple_Notice_Custom_Control extends WP_Customize_Control
     /**
      * Render the control in the customizer
      */
-    public function render_content()
-    {
+    public function render_content() {
         $allowed_html = array(
             'a' => array(
                 'href' => array(),

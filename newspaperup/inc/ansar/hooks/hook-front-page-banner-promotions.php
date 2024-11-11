@@ -5,8 +5,7 @@ if (!function_exists('newspaperup_banner_advertisement')):
      * @since newspaperup 1.0.0
      *
      */
-    function newspaperup_banner_advertisement()
-    {
+    function newspaperup_banner_advertisement() {
 
         if (('' != newspaperup_get_option('banner_ad_image')) ) {
 

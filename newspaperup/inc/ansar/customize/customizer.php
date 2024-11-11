@@ -61,24 +61,20 @@ function video_banner_section_function($control){
 function slider_callback($control){
   $banner_slider_option = $control->manager->get_setting('banner_options_main')->value();
   $banner_slider_section_option = $control->manager->get_setting('banner_slider_section_option')->value();
-if ($banner_slider_option == 'banner_slider_section_option' && $banner_slider_section_option == 'latest_post_show') {
-            return true;
-        }else{
-            return false;
-        }
+    if ($banner_slider_option == 'banner_slider_section_option' && $banner_slider_section_option == 'latest_post_show') {
+        return true;
+    }else{
+        return false;
     }
+}
 
-
-    function overlay_text($control){
-
+function overlay_text($control){
     $banner_slider_option = $control->manager->get_setting('banner_options_main')->value();
-
     if($banner_slider_option == 'header_video' || $banner_slider_option == 'video_banner_section'){
         return true;
     }else{
        return false;
     }
-
 }
 
 /**
@@ -239,9 +235,7 @@ function newspaperup_customize_partial_newspaperup_menu_subscriber() {
 }
 
 function newspaperup_customize_partial_archive_page() {
-
     do_action('newspaperup_action_main_content_layouts');
-    
 }
 
 function newspaperup_customize_partial_single_page() {
@@ -262,8 +256,8 @@ function newspaperup_customize_preview_js() {
 add_action('customize_preview_init', 'newspaperup_customize_preview_js');
 
 /************************* Theme Customizer with Sanitize function *********************************/
-function newspaperup_theme_option( $wp_customize )
-{   $newspaperup_default = newspaperup_get_default_theme_options();
+function newspaperup_theme_option( $wp_customize ){   
+    $newspaperup_default = newspaperup_get_default_theme_options();
 
     function newspaperup_sanitize_text( $input ) {
         return wp_kses_post( force_balance_tags( $input ) );

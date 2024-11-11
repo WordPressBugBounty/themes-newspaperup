@@ -5,8 +5,7 @@
  * @since newspaperup pro
  *
  */
-function newspaperup_social_section($align = '')
-{ 
+function newspaperup_social_section($align = '') { 
   $align = $align == 'center' ? 'center' : 'md-end'; ?>
   <ul class="bs-social">
     <?php $social_icons = get_theme_mod( 'newspaperup_social_icons', newspaperup_get_social_icon_default() );
@@ -28,7 +27,6 @@ function newspaperup_social_section($align = '')
       }
     }
   echo '</ul>';
-  
 }
 endif;
 add_action('newspaperup_action_social_section', 'newspaperup_social_section', 2);

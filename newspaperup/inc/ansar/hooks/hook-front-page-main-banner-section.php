@@ -12,7 +12,6 @@ if (!function_exists('newspaperup_front_page_banner_section')) :
       do_action('newspaperup_action_trending_posts');
       get_template_part('inc/ansar/hooks/blocks/block','banner-list');
       do_action('newspaperup_action_editor_posts');
-
     }
   }
 endif;

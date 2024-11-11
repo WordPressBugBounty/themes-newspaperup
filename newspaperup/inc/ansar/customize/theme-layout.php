@@ -1,9 +1,7 @@
 <?php /*** Option Panel
- *
- * @package newspaperup
- */
-
-
+*
+* @package newspaperup
+*/
 $newspaperup_default = newspaperup_get_default_theme_options();
 /*theme option panel info*/
 

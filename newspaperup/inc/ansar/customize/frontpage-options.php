@@ -31,36 +31,19 @@ $wp_customize->add_control( new Custom_Tab_Control ( $wp_customize,'slider_tabs'
         'type' => 'custom-tab-control',
         'priority' => 1,
         'section'               => 'frontpage_main_banner_section_settings',
-        'controls_general'      => json_encode( array( 
-            '#customize-control- ',
+        'controls_general'      => json_encode( array(
             '#customize-control-show_main_banner_section', 
-            '#customize-control- ', 
-            '#customize-control-', 
-            '#customize-control- ', 
             '#customize-control-newspaperup_main_banner_section_background_image',
-            '#customize-control- ',
-            '#customize-control- ', 
             '#customize-control-main_slider_section_title', 
             '#customize-control-select_slider_news_category',
-            '#customize-control- ',  
-            '#customize-control- ',  
-            '#customize-control- ',  
             '#customize-control-main_trending_post_section_title', 
-            '#customize-control- ', 
-            '#customize-control- ', 
             '#customize-control-select_trending_news_category',
             '#customize-control-main_editor_post_section_title', 
             '#customize-control-select_editor_news_category',
-            '#customize-control- ',
         ) ),
         'controls_design'       => json_encode( array(  
-            '#customize-control-main_slider_section_title', 
-            '#customize-control- ',
-            '#customize-control- ', 
-            '#customize-control- ', 
+            '#customize-control-main_slider_section_title',
             '#customize-control-newspaperup_slider_title_font_size',
-            '#customize-control- ',
-            '#customize-control- ',
             '#customize-control-slider_meta_enable',
             '#customize-control-tren_edit_section_title',
             '#customize-control-newspaperup_tren_edit_title_font_size',
@@ -199,7 +182,6 @@ Newspaperup_Customizer_Control::add_field(
                 'default_value' => 38,
             ),
         ),
-        // 'active_callback' => 'newspaperup_main_banner_section_status',
     ),
 );
 // Hide / Show Author,Date,Comment
@@ -211,7 +193,6 @@ Newspaperup_Customizer_Control::add_field(
 		'section'  => 'frontpage_main_banner_section_settings',
         'default' => true,
         'sanitize_callback' => 'newspaperup_sanitize_checkbox',
-        // 'active_callback' => 'newspaperup_main_banner_section_status',
 	)
 );
 //Trending/Editor Section title
@@ -222,7 +203,6 @@ Newspaperup_Customizer_Control::add_field(
         'label' => esc_html__('Trending/Editor Post Section', 'newspaperup'),
 		'section'  => 'frontpage_main_banner_section_settings',
         'sanitize_callback' => 'newspaperup_sanitize_text',
-        // 'active_callback' => 'newspaperup_main_banner_section_status',
 	)
 ); 
 // Trending/Editor Title Font Size
@@ -254,6 +234,5 @@ Newspaperup_Customizer_Control::add_field(
                 'default_value' => 22,
             ),
         ),
-        // 'active_callback' => 'newspaperup_main_banner_section_status',
     ),
 );

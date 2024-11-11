@@ -61,7 +61,6 @@ function newspaperup_deprecated_hook_admin_notice() {
                                     <?php esc_html_e( 'View Demos', 'newspaperup' ) ?>
                                 </a>
                             </div>
-
                         </div>
                     </div>
                     <div class="newspaperup-notice_image">

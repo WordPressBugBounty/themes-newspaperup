@@ -148,8 +148,7 @@ $wp_customize->add_control( new Custom_Tab_Control ( $wp_customize,'top_bar_tabs
                                                     '#customize-control-brk_news_enable',
                                                     '#customize-control-breaking_news_title',
                                                     '#customize-control-date_settings',
-                                                    '#customize-control-header_data_enable',
-                                                    // '#customize-control-header_time_enable', 
+                                                    '#customize-control-header_data_enable', 
                                                     '#customize-control-newspaperup_date_time_show_type',
         ) ),
         'controls_design'       => json_encode( array( 
