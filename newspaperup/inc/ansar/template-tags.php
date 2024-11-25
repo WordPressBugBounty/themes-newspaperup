@@ -131,7 +131,13 @@ if ( ! function_exists( 'newspaperup_post_comments' ) ) :
     function newspaperup_post_comments() { ?>
        <span class="comments-link"> 
             <a href="<?php the_permalink(); ?>">
-                <?php echo get_comments_number(); ?> <?php esc_html_e( get_comments_number() <= 1 ? __('Comment', 'newspaperup') : __('Comments', 'newspaperup')); ?>
+                <?php
+                if ( get_comments_number() == 0 ) {
+                    esc_html_e(  __('No Comments', 'newspaperup') );
+                } else {
+                    echo get_comments_number() . ' ';
+                    esc_html_e( get_comments_number() == 1 ? __('Comment', 'newspaperup') : __('Comments', 'newspaperup') );
+                } ?>
             </a> 
         </span>
     <?php }
