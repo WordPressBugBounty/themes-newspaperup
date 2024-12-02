@@ -1896,7 +1896,7 @@ footer.one .bs-footer-copyright{
 .page-entry-title{
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
     justify-content: flex-start;
     margin-bottom: 20px;
 	border-radius: 0;
@@ -1913,7 +1913,7 @@ footer.one .bs-footer-copyright{
 	}
 	&:has(.entry-title.title){
 		justify-content: space-between;
-		padding: 15px;
+		padding: 15px 0;
 	}
 }
 .bs-card-box.page-entry-title + .row .page-title{

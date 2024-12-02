@@ -317,13 +317,23 @@ footer .newspaperup-widget .woocommerce ul.cart_list li img, footer .newspaperup
 }
 .woocommerce span.onsale, .woocommerce ul.products li.product .onsale {  
   width: 200px;
-  height: 20px;
+  height: auto;
   min-height: 20px;
   line-height: 16px;
   top: 25px;
   right: -60px;
   transform: rotate(45deg);
   border-radius: 0;
+}
+.woocommerce.single-product .type-product span.onsale {
+    transform: rotate(0);
+    width: 55px;
+    height: auto;
+    padding: 5px;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 #00000020;
 }
 .woocommerce .woocommerce-ordering select {
   height: 50px;
@@ -439,11 +449,4 @@ table, th, td {
 }
 .woocommerce-checkout .wc-block-checkout__add-note .wc-block-components-textarea:focus{
 	background: none;
-}
-/* Woo rtl */
-.rtl.woocommerce ul.products li.product .woocommerce-loop-product__link .woocommerce-loop-product__title{
-	background-position: right 100%;
-}
-.rtl.woocommerce ul.products li.product .woocommerce-loop-product__link:hover .woocommerce-loop-product__title{
-	background-position: right 100%;
 }

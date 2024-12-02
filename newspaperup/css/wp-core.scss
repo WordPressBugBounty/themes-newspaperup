@@ -792,3 +792,27 @@ dd {
     display: inline;
     float: left;
 }
+/* Woo rtl */
+.rtl.woocommerce{
+	ul.products li.product .woocommerce-loop-product__link .woocommerce-loop-product__title{
+		background-position: right 100%;
+	}
+	ul.products li.product .woocommerce-loop-product__link:hover .woocommerce-loop-product__title{
+		background-position: right 100%;
+	}
+	&.single-product .type-product span.onsale{
+        transform: rotate(0);
+        width: 55px;
+        height: auto;
+        padding: 5px;
+        top: 10px; 
+        border-radius: 4px;
+        box-shadow: 0 0 10px 0 #00000020; 
+		right: 10px;
+	}
+	& span.onsale, ul.products li.product .onsale{
+		transform: rotate(315deg);
+		left: -60px;
+		right: auto;
+	}
+}

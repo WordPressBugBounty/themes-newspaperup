@@ -10,8 +10,8 @@ get_header(); ?>
 <!-- #main -->
 <main id="content" class="woocommerce-class content">
 	<div class="container">
+		<?php do_action('newspaperup_action_archive_page_title'); ?>
 		<div class="row">
-			<?php do_action('newspaperup_breadcrumb_content'); ?>
 			<div class="col-lg-12">
 				<?php woocommerce_content(); ?>
 			</div>

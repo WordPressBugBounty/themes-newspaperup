@@ -1948,7 +1948,7 @@ footer.one .bs-footer-copyright {
 .page-entry-title {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   justify-content: flex-start;
   margin-bottom: 20px;
   border-radius: 0;
@@ -1964,7 +1964,7 @@ footer.one .bs-footer-copyright {
 }
 .page-entry-title:has(.entry-title.title) {
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .bs-card-box.page-entry-title + .row .page-title {
@@ -5034,13 +5034,24 @@ footer .newspaperup-widget .woocommerce ul.cart_list li img, footer .newspaperup
 
 .woocommerce span.onsale, .woocommerce ul.products li.product .onsale {
   width: 200px;
-  height: 20px;
+  height: auto;
   min-height: 20px;
   line-height: 16px;
   top: 25px;
   right: -60px;
   transform: rotate(45deg);
   border-radius: 0;
+}
+
+.woocommerce.single-product .type-product span.onsale {
+  transform: rotate(0);
+  width: 55px;
+  height: auto;
+  padding: 5px;
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1254901961);
 }
 
 .woocommerce .woocommerce-ordering select {
@@ -5183,15 +5194,6 @@ table, th, td {
 
 .woocommerce-checkout .wc-block-checkout__add-note .wc-block-components-textarea:focus {
   background: none;
-}
-
-/* Woo rtl */
-.rtl.woocommerce ul.products li.product .woocommerce-loop-product__link .woocommerce-loop-product__title {
-  background-position: right 100%;
-}
-
-.rtl.woocommerce ul.products li.product .woocommerce-loop-product__link:hover .woocommerce-loop-product__title {
-  background-position: right 100%;
 }
 
 /* --------------------------------------

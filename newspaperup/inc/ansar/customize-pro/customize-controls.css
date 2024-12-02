@@ -15,12 +15,6 @@ body #accordion-section-newspaperup_pro_upsell h3 .button-secondary:hover{
     background: #fff !important;
     color: #461cfb;
 }
-#customize-controls .control-section > h3.accordion-section-title {
-    display: flex;
-}
-body #accordion-section-newspaperup_pro_upsell .accordion-section-title::after, body #accordion-section-newspaperup_support_form .accordion-section-title::after{
-    content: '';
-}
 body #accordion-section-newspaperup_support_form h3{
     display: flex; 
 }

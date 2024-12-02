@@ -269,37 +269,43 @@ function newspaperup_custom_width_css() {
   </style>';
 }
 
-if (!function_exists('get_archive_title')) :
+if (!function_exists('newspaperup_get_archive_title')) :
         
-    function get_archive_title($title)
-    {
-        if (is_category()) {
-            $title = single_cat_title('', false);
-        } elseif (is_tag()) {
-            $title = single_tag_title('', false);
-        } elseif (is_author()) {
-            $title = get_the_author();
-        } elseif (is_year()) {
-            $title = get_the_date('Y');
-        } elseif (is_month()) {
-            $title = get_the_date('F Y');
-        } elseif (is_day()) {
-            $title = get_the_date('F j, Y');
-        } elseif (is_post_type_archive()) {
-            $title = post_type_archive_title('', false);
-        } elseif (is_single()) {
-            $title = '';
-        } elseif (is_search()) {
-            $title = '';
-        } else {
-            $title = get_the_title();
+    function newspaperup_get_archive_title($title) {
+      
+        if (class_exists('WooCommerce')) {
+            if (is_shop()) {
+                return get_the_title(wc_get_page_id('shop'));
+            } elseif (is_product_category() || is_product_tag()) {
+                return single_term_title('', false);
+            }
         }
-        
+
+        if (is_category()) {
+            return single_cat_title('', false);
+        } elseif (is_tag()) {
+            return single_tag_title('', false);
+        } elseif (is_author()) {
+            return get_the_author();
+        } elseif (is_year()) {
+            return get_the_date('Y');
+        } elseif (is_month()) {
+            return get_the_date('F Y');
+        } elseif (is_day()) {
+            return get_the_date('F j, Y');
+        } elseif (is_post_type_archive()) {
+            return post_type_archive_title('', false);
+        } elseif (is_single()) {
+            return '';
+        } else {
+            return get_the_title();
+        }
+
         return $title;
     }
 
 endif;
-add_filter('get_the_archive_title', 'get_archive_title');
+add_filter('get_the_archive_title', 'newspaperup_get_archive_title');
 
 /* return current archive title markup with breadcrumb */
 if (!function_exists('newspaperup_archive_page_title')) :
@@ -413,14 +419,12 @@ if( ! function_exists( 'newspaperup_breadcrumb' ) ) :
                                         yoast_breadcrumb();
                                     }
                                 }
-                                elseif($newspaperup_site_breadcrumb_type == 'navxt')
-                                {
+                                elseif($newspaperup_site_breadcrumb_type == 'navxt') {
                                     if( function_exists( 'bcn_display' ) ) {
                                         bcn_display();
                                     }
                                 }
-                                elseif($newspaperup_site_breadcrumb_type == 'rankmath')
-                                {
+                                elseif($newspaperup_site_breadcrumb_type == 'rankmath') {
                                     if( function_exists( 'rank_math_the_breadcrumbs' ) ) {
                                         rank_math_the_breadcrumbs();
                                     }

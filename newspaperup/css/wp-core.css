@@ -911,4 +911,27 @@ dd {
   margin-right: 1.5em;
   display: inline;
   float: left;
+}
+
+/* Woo rtl */
+.rtl.woocommerce ul.products li.product .woocommerce-loop-product__link .woocommerce-loop-product__title {
+  background-position: right 100%;
+}
+.rtl.woocommerce ul.products li.product .woocommerce-loop-product__link:hover .woocommerce-loop-product__title {
+  background-position: right 100%;
+}
+.rtl.woocommerce.single-product .type-product span.onsale {
+  transform: rotate(0);
+  width: 55px;
+  height: auto;
+  padding: 5px;
+  top: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1254901961);
+  right: 10px;
+}
+.rtl.woocommerce span.onsale, .rtl.woocommerce ul.products li.product .onsale {
+  transform: rotate(315deg);
+  left: -60px;
+  right: auto;
 }/*# sourceMappingURL=wp-core.css.map */
