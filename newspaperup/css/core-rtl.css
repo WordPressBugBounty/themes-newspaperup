@@ -567,7 +567,7 @@ p {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5px;
+  gap: 4.5px;
 }
 .bs-social li {
   display: inline-flex;
@@ -1605,7 +1605,10 @@ form.search-form label .search-field {
   position: absolute;
 }
 .bs-widget-title .title span .fa-arrow-right {
-  transform: rotate(-45deg);
+  transform: rotate(-135deg);
+}
+.widget_block .wp-block-heading span i, .widget_block .wp-block-search__label span i {
+  transform: rotate(-135deg);
 }
 .bs-widget-title .border-line {
   width: 100%;
@@ -1797,7 +1800,7 @@ footer.one .bs-footer-copyright {
   padding: 0;
 }
 .page-entry-title:has(.entry-title.title) {
-  padding: 15px;
+  padding: 15px 0;
 }
 .bs-card-box.page-entry-title + .row .page-title {
   display: none;

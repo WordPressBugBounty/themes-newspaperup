@@ -649,7 +649,7 @@ p {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5px;
+  gap: 4.5px;
 }
 .bs-social li {
   display: inline-flex;
@@ -2635,7 +2635,7 @@ footer.one .bs-footer-copyright {
   gap: 8px;
   flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .bs-blog-category a {
   font-size: 13px;
