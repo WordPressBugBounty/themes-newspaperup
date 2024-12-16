@@ -882,6 +882,17 @@ p {
   font-size: 16px;
   cursor: pointer;
 }
+.right-nav .bs-cart .bs-cart-count {
+  width: 17px;
+  height: 17px;
+  font-size: 13px;
+  line-height: 17px;
+  border-radius: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -5px);
+}
 .right-nav .search-bar {
   padding: 0;
 }
@@ -1785,7 +1796,7 @@ footer.one .bs-footer-copyright {
 .page-entry-title {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   justify-content: space-between;
   margin-bottom: 20px;
   border-radius: 0;
@@ -4424,6 +4435,10 @@ footer .widget_Newspaperup_featured_latest_news {
   border: none;
   font-size: 12px;
   margin: 0;
+}
+a.wc-block-cart__submit-button {
+  border-radius: 10px;
+  text-decoration: none;
 }
 .woocommerce-page .woocommerce-result-count {
   float: left;

@@ -891,6 +891,9 @@ p {
 		display: flex;
 		overflow: visible;
 		gap: 2px;
+		.bs-cart-total{
+			margin-right: 10px;
+		}
 		.bs-cart-count {
 			width: 17px;
 			height: 17px;

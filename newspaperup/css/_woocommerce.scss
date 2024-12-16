@@ -170,6 +170,10 @@ footer .newspaperup-widget .woocommerce ul.cart_list li img, footer .newspaperup
 	padding: 6px 12px;
 }
 /*woocommerce-cart*/
+a.wc-block-cart__submit-button {
+    border-radius: 10px;
+    text-decoration: none;
+}
 .woocommerce table.shop_table {
 	border-radius: 0;
 }

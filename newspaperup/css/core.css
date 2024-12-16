@@ -1023,6 +1023,9 @@ p {
   overflow: visible;
   gap: 2px;
 }
+.right-nav .bs-cart .bs-cart-total {
+  margin-right: 10px;
+}
 .right-nav .bs-cart .bs-cart-count {
   width: 17px;
   height: 17px;
@@ -4859,6 +4862,11 @@ footer .newspaperup-widget .woocommerce ul.cart_list li img, footer .newspaperup
 }
 
 /*woocommerce-cart*/
+a.wc-block-cart__submit-button {
+  border-radius: 10px;
+  text-decoration: none;
+}
+
 .woocommerce table.shop_table {
   border-radius: 0;
 }

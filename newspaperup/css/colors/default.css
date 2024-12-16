@@ -1214,6 +1214,10 @@ table, th, td {
 	border-color: #ddd;
 }
 /*----woocommerce----*/ 
+a.wc-block-cart__submit-button {
+    background: var(--pri-color);
+    color: #fff;
+}
 .woocommerce-cart table.cart td.actions .coupon .input-text {
 	border-color: #ebebeb;
 }

@@ -4,8 +4,8 @@ Author: Themeansar
 Requires at least: WordPress 5.4
 Tested up to: WordPress 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.7
-Version: 1.0.7
+Stable tag: 1.0.8
+Version: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets,  theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, news
@@ -113,4 +113,7 @@ License Url: https://stocksnap.io/license
 * Fixed Page Title Issue on Woocommerce.
 
 = Version 1.0.7
+* Fixed Styling Issue.
+
+= Version 1.0.8
 * Fixed Styling Issue.
