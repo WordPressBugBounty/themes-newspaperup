@@ -22,11 +22,11 @@ function newspaperup_side_menu_section() { ?>
       <div class="bs-card-box empty-sidebar">
       <?php newspaperup_widget_title($title); ?>
         <p class='empty-sidebar-widget-text'>
-          <?php echo esc_html( 'This is an example widget to show how the Header Toggle Sidebar looks by default. You can add custom widgets from the', 'newspaperup' ); ?>
+          <?php esc_html_e( 'This is an example widget to show how the Header Toggle Sidebar looks by default. You can add custom widgets from the', 'newspaperup' ); ?>
           <a href='<?php echo esc_url( admin_url( 'widgets.php' ) ); ?>' title='<?php esc_attr_e('widgets','newspaperup'); ?>'>
-            <?php echo esc_html( 'widgets', 'newspaperup' ); ?>
+            <?php esc_html_e( 'widgets', 'newspaperup' ); ?>
           </a>
-          <?php echo esc_html( 'in the admin.', 'newspaperup' ); ?>
+          <?php esc_html_e( 'in the admin.', 'newspaperup' ); ?>
         </p>
       </div>
       <?php } ?>

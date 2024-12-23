@@ -18,7 +18,7 @@
     } ?>
     <footer class="footer one <?php echo esc_attr($footer_bg_img != '' ? 'back-img' : '' ); ?>"
     <?php if($footer_bg_img != '') { ?> style="background-image:url('<?php echo get_footer_bg_img()?>');" <?php } ?> >
-        <div class="overlay" style="background-color: <?php echo esc_html($newspaperup_footer_overlay_color);?>;">
+        <div class="overlay" style="background-color: <?php echo ($newspaperup_footer_overlay_color);?>;">
             <!--Start bs-footer-widget-area-->
             <?php if ( is_active_sidebar( 'footer_widget_area' ) ) { ?>
                 <div class="bs-footer-widget-area">

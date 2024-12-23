@@ -15,8 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * Class Newspaperup_Sortable_Control
  */
-class Newspaperup_Sortable_Control extends WP_Customize_Control
-{
+class Newspaperup_Sortable_Control extends WP_Customize_Control {
 
 	/**
 	 * Control's Type.
@@ -31,8 +30,7 @@ class Newspaperup_Sortable_Control extends WP_Customize_Control
 	 *
 	 * @see WP_Customize_Control::to_json()
 	 */
-	public function to_json()
-	{
+	public function to_json(){
 		parent::to_json();
 
 		$this->json[ 'default' ] = $this->setting->default;
@@ -84,8 +82,7 @@ class Newspaperup_Sortable_Control extends WP_Customize_Control
 	 *
 	 * @see    WP_Customize_Control::print_template()
 	 */
-	protected function content_template()
-	{
+	protected function content_template() {
 		?>
 
         <div class="customizer-text">
@@ -160,8 +157,7 @@ class Newspaperup_Sortable_Control extends WP_Customize_Control
 	/**
 	 * Don't render the control content from PHP, as it's rendered via JS on load.
 	 */
-	public function render_content()
-	{
+	public function render_content(){
 	}
 
 }

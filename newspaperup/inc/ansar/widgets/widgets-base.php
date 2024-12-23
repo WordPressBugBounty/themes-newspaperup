@@ -86,9 +86,9 @@ class Newspaperup_Widget_Base extends WP_Widget
             <label for="<?php echo $instance; ?>">
                 <?php echo $label; ?>
             </label>
-            <textarea class="widefat"
-                      id="<?php echo esc_attr($instance); ?>"
-                      name="<?php echo esc_attr($instance); ?>"><?php echo esc_html($instance); ?></textarea>
+            <textarea class="widefat" id="<?php echo esc_attr($instance); ?>" name="<?php echo esc_attr($instance); ?>">
+                <?php echo esc_html($instance); ?>
+            </textarea>
             <?php if (!empty($note)): ?>
                 <small><?php echo esc_html($note); ?></small>
             <?php endif; ?>
