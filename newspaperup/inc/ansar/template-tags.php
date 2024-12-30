@@ -297,6 +297,8 @@ if (!function_exists('newspaperup_get_archive_title')) :
             return post_type_archive_title('', false);
         } elseif (is_single()) {
             return '';
+        } elseif (is_search()) {
+            return '';
         } else {
             return get_the_title();
         }
