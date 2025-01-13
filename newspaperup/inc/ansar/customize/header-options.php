@@ -190,7 +190,7 @@ Newspaperup_Customizer_Control::add_field(
         'settings'  => 'breaking_news_title',
         'label' => esc_html__('Title', 'newspaperup'),
 		'section'  => 'header_top_bar',
-        // 'transport' => 'postMessage',
+        'transport' => 'postMessage',
         'default' => $newspaperup_default['breaking_news_title'],
         'sanitize_callback' => 'sanitize_text_field',
 	)

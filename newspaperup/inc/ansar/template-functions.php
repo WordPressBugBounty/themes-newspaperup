@@ -745,9 +745,7 @@ function newspaperup_date_display_type() {
 
         <?php } elseif( $newspaperup_date_time_show_type == 'wordpress_date_setting') { ?>
             <div class="top-date ms-1">
-                <span class="day">
-                    <?php echo date_i18n( get_option( 'date_format' ) ); ?>
-                </span>
+                <span><?php echo date_i18n( get_option( 'date_format' ) ); ?></span>
             </div>
         <?php }
     } 

@@ -202,12 +202,10 @@ function newspaperup_news_ticker_section(){ ?>
   $slider_post_order_by = newspaperup_get_option('slider_post_order_by');
   $breaking_news_title = newspaperup_get_option('breaking_news_title');
   $all_posts = newspaperup_get_posts($newspaper_number_of_post, $category, $slider_post_order_by);
-  $count = 1;
-  if ((!empty($breaking_news_title))){ ?>
+  $count = 1; ?>
     <div class="bn_title">
       <h5 class="title"><i class="fas fa-bolt"></i><?php if (!empty($breaking_news_title)){ echo '<span>'.$breaking_news_title.'</span>'; } ?></h5>
     </div>
-  <?php } ?>
   <!-- bs-latest-news_slider -->
     <div class="bs-latest-news-slider swipe bs swiper-container">
       <div class="swiper-wrapper">

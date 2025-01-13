@@ -2012,8 +2012,11 @@ footer.one .bs-footer-copyright {
   border-radius: 50%;
   font-size: 12px;
 }
+.bs-latest-news .bn_title .title span {
+  padding-right: 6px;
+}
 .bs-latest-news .bn_title .title:has(i) {
-  padding: 4px 10px 4px 4px;
+  padding: 4px;
 }
 .bs-latest-news .bs-latest-news-slider {
   padding: 0;

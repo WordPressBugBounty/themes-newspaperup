@@ -108,21 +108,17 @@ function newspaperup_customize_register($wp_customize) {
 		$wp_customize->selective_refresh->add_partial('custom_logo', array(
 			'selector'        => '.site-logo', 
 			'render_callback' => 'custom_logo_selective_refresh'
-		));	
-
+		));
         $wp_customize->selective_refresh->add_partial('newspaperup_social_icons', array(
             'selector'        => 'footer .bs-social ',
         ));
-
         $wp_customize->selective_refresh->add_partial('newspaperup_scrollup_enable', array(
             'selector'        => '.bs_upscr',
         ));
-
         $wp_customize->selective_refresh->add_partial('you_missed_title', array(
             'selector'          => '.missed .bs-widget-title',
             'render_callback'   => 'newspaperup_customize_partial_you_missed_title',
         ));
-
         $wp_customize->selective_refresh->add_partial('sidebar_menu', array(
             'selector'        => '.navbar-wp [data-bs-toggle=offcanvas]',
             'render_callback' => 'newspaperup_customize_partial_sidebar_menu',
@@ -131,16 +127,13 @@ function newspaperup_customize_register($wp_customize) {
             'selector'        => '.bs-related-post-info .mb-3 .title',
             'render_callback' => 'newspaperup_customize_partial_newspaperup_related_post_title',
         ));
-
         $wp_customize->selective_refresh->add_partial('newspaperup_menu_search', array(
             'selector'        => '.desk-header .right-nav a',
             'render_callback' => 'newspaperup_customize_partial_newspaperup_menu_search',
         ));
-
         $wp_customize->selective_refresh->add_partial('newspaperup_lite_dark_switcher', array(
             'selector'        => '.switch .slider',    
         ));
-
         $wp_customize->selective_refresh->add_partial('single_post_meta', array(
             'selector'        => '.bs-blog-post .bs-header .bs-blog-meta ',
         )); 
@@ -164,6 +157,10 @@ function newspaperup_customize_register($wp_customize) {
         $wp_customize->selective_refresh->add_partial('newspaperup_page_layout', array(
             'selector'        => '.page-class > .container > .row', 
             'render_callback' => 'newspaperup_customize_partial_page'
+        ));
+        $wp_customize->selective_refresh->add_partial('breaking_news_title', array(
+            'selector'        => '.bs-latest-news .bn_title .title span', 
+            'render_callback' => 'newspaperup_customize_partial_breaking_news_title'
         ));
 	}
 
@@ -228,6 +225,10 @@ function newspaperup_customize_partial_you_missed_title() {
 
 function newspaperup_customize_partial_sidebar_menu() {
     return get_theme_mod( 'sidebar_menu' ); 
+}
+
+function newspaperup_customize_partial_breaking_news_title() {
+    return get_theme_mod( 'breaking_news_title' ); 
 }
 
 function newspaperup_customize_partial_newspaperup_menu_subscriber() {
