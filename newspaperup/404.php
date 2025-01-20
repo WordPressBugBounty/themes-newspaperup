@@ -9,7 +9,8 @@ get_header();?>
   <div id="content" class="404-class container content">
     <!--container-->
     <div class="container">
-      <?php do_action('newspaperup_action_archive_page_title'); ?>
+      <?php do_action('newspaperup_action_archive_page_title'); 
+      $btn_text = get_theme_mod('newspaperup_404_btn_title','Go Back') ?>
     </div>
     <!--row-->
     <div class="row">
@@ -21,8 +22,8 @@ get_header();?>
             </h1>
             <h4 class="subtitle"><?php echo esc_html(get_theme_mod('newspaperup_404_title', 'Oops! Page not found')); ?></h4>
             <p class="description"><?php echo esc_html(get_theme_mod('newspaperup_404_desc','We are sorry, but the page you are looking for does not exist.')); ?></p>
-            <a href="<?php echo esc_url(home_url());?>" onClick="history.back();" class="btn btn-theme">
-              <?php echo esc_html(get_theme_mod('newspaperup_404_btn_title','Go Back')); ?>
+            <a href="<?php echo esc_url(home_url());?>" onClick="history.back();" class="btn btn-one btn-theme" data-text="<?php echo esc_attr($btn_text); ?>">
+              <?php echo esc_html($btn_text); ?>
             </a>
           </div>
         <!--/mg-error-404--> 
