@@ -64,7 +64,12 @@ function newspaperup_deprecated_hook_admin_notice() {
                         </div>
                     </div>
                     <div class="newspaperup-notice_image">
-                        <img class="newspaperup-screenshot" src="<?php echo esc_url( get_theme_file_uri() . '/images/customize.webp' ); ?>" alt="<?php esc_attr_e( 'Newspaperup', 'newspaperup' ); ?>" />
+                    <?php 
+                        $image_url = get_theme_file_uri( '/images/customize.webp' );
+                        // Check if the file exists
+                        if ( file_exists( get_theme_file_path( '/images/customize.webp' ) ) ) { ?>
+                            <img class="newspaperup-screenshot" src="<?php echo esc_url( $image_url ); ?>" alt="<?php esc_attr_e( 'Newspaperup', 'newspaperup' ); ?>" />
+                        <?php } ?>
                     </div>
                 </div>
             </div>
