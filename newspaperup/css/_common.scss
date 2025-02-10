@@ -1338,10 +1338,12 @@ header.bs-default {
 		justify-content: space-between;
 		width: 100%;
 		border-radius: 4px;
+		align-items: center;
 
 		.nav-previous, .nav-next{
 			width: 50%;
 			padding: 1rem;
+			word-break: break-all;
 
 			a{
 				display: flex;

@@ -1423,6 +1423,20 @@ color: var(--head-color);
 th {
 	background: transparent;
 }
+pre{
+	background: var(--border-color);
+}
+pre code{
+	background: var(--border-color);
+	color: var(--head-color);
+}
+mark, span.highlight, code, kbd, var, samp, tt {
+	background: var(--headmenu-color);
+    color: var(--box-color2);
+}
+.small.single .wp-block-latest-posts li a:hover, .small.single .wp-block-categories-list li a:hover, .small.single .wp-block-categories__list li a:hover, .small.single .wp-block-archives-list li a:hover{
+	color: #a90e6d;
+}
 .post-password-form{
 	background-color: var(--border-color);
 }

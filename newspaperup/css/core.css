@@ -1431,10 +1431,12 @@ header.bs-default .bs-menu-full {
   justify-content: space-between;
   width: 100%;
   border-radius: 4px;
+  align-items: center;
 }
 .navigation.post-navigation .nav-links .nav-previous, .navigation.post-navigation .nav-links .nav-next {
   width: 50%;
   padding: 1rem;
+  word-break: break-all;
 }
 .navigation.post-navigation .nav-links .nav-previous a, .navigation.post-navigation .nav-links .nav-next a {
   display: flex;
