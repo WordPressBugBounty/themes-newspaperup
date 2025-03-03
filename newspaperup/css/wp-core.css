@@ -30,7 +30,7 @@ td {
   text-decoration: underline;
 }
 
-.small.single a:hover, p a:hover, .small.single .wp-block-button__link, .site-title a, .small.single .nav-links a, .small.single .single-nav-links a, a, .site-title-footer a, .small.single .wp-block-latest-posts li a, .small.single .wp-block-categories-list li a, .small.single .wp-block-categories__list li a, .small.single .wp-block-archives-list li a, .bs-footer-copyright p a, .page-class .bs-card-box a:hover {
+.small.single a:hover, p a:hover, .small.single .wp-block-button__link, .site-title a, .small.single .nav-links a, .small.single .single-nav-links a, a, .site-title-footer a, .small.single .wp-block-latest-posts li a, .small.single .wp-block-categories-list li a, .small.single .wp-block-categories__list li a, .small.single .wp-block-archives-list li a, .bs-footer-copyright p a, .page-class .bs-card-box a:hover, .comments-area.bs-card-box a {
   text-decoration: none;
 }
 
