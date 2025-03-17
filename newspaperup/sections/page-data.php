@@ -21,7 +21,7 @@
     <div class="<?php echo esc_attr(($newspaperup_page_layout == "page-full-width-content") ? 'col-lg-12' : 'col-lg-8 content-right'); ?>">
         <div class="bs-card-box wd-back">
             <?php if( have_posts()) {
-                the_post(); 
+                the_post();
                 if(has_post_thumbnail()) {
                     echo '<figure class="post-thumbnail">';
                         the_post_thumbnail( '', array( 'class'=>'img-responsive img-fluid' ) );

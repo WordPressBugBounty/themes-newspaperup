@@ -73,17 +73,11 @@ Newspaperup_Customizer_Control::add_field(
 // Setting newspaperup_main_banner_section_background_image.
 Newspaperup_Customizer_Control::add_field( 
 	array(
-		'type'     => 'cropped_image', 
+		'type'     => 'image', 
         'settings'  => 'newspaperup_main_banner_section_background_image',
-        'label' => esc_html__('Background image', 'newspaperup'),
-        'description' => sprintf(esc_html__('Recommended Size %1$s px X %2$s px', 'newspaperup'), 1200, 720),
+        'label' => esc_html__('Background image', 'newspaperup'), 
 		'section'  => 'frontpage_main_banner_section_settings',
-        'default' => '',
-        'width' => 1200,
-        'height' => 720,
-        'flex_width' => true,
-        'flex_height' => true,
-        'sanitize_callback' => 'absint', 
+        'sanitize_callback' => 'esc_url_raw', 
         'active_callback' => 'newspaperup_main_banner_section_status'
 	)
 );

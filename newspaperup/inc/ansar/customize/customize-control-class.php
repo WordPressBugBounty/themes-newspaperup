@@ -63,6 +63,9 @@ if ( ! class_exists( 'Newspaperup_Customizer_Control' ) ) {
 					case 'cropped_image':
 						$wp_customize->add_control( new WP_Customize_Cropped_Image_Control( $wp_customize, $field_id, $args ) );
                     break;
+					case 'image':
+						$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $field_id, $args ) );
+                    break;
 					case 'toggle':
 						$wp_customize->add_control( new Newspaperup_Toggle_Control( $wp_customize, $field_id, $args ) );
                     break;
