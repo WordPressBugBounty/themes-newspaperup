@@ -178,10 +178,15 @@
 .mainfeatured .featinner {
 	z-index: 1;
 }
-.mainfeatured.over .featinner {
-	padding-bottom: 30px; 
-	padding-top: 30px; 
-	margin-top: 0;
+.mainfeatured.over{
+	.featinner {
+		padding-bottom: 30px; 
+		padding-top: 30px; 
+		margin-top: 0;
+	}
+	.small-post .small-post-content{
+		
+	}
 }
 .bs-slide.bs-blog-post.three.lg {
 	height: 490px;

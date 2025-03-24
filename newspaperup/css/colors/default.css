@@ -353,6 +353,12 @@ a:hover, a:focus {
 .mainfeatured.six .featinner{
 	background: var(--grady-color);
 }
+.mainfeatured.over .featinner .small-post .small-post-content .title a{
+	color: #fff;
+}
+.mainfeatured.over .featinner .small-post .small-post-content .bs-blog-meta a, .mainfeatured.over .featinner .small-post .small-post-content .bs-blog-meta{
+	color: #fff;
+}
 .bs-latest-news .bn_title .title {
 	background-color: #fff;
 	color: #000;
@@ -419,7 +425,7 @@ a:hover, a:focus {
 	color: var(--head-color);
 }
 .wp-block-heading:before, .wp-block-search__label:before{
-	background: var(--border-color);
+	background: var(--title-border)
 }
 .wp-block-heading:after, .wp-block-search__label:after{
 	background-color: var(--pri-color);

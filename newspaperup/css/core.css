@@ -4301,7 +4301,6 @@ textarea#comment {
   padding-top: 30px;
   margin-top: 0;
 }
-
 .bs-slide.bs-blog-post.three.lg {
   height: 490px;
 }
@@ -4601,6 +4600,7 @@ footer .bs-widget ul li {
 footer .widget_block {
   margin: 0;
   padding-bottom: 0;
+  overflow: hidden;
 }
 footer .widget_block ul li {
   margin: 0;
