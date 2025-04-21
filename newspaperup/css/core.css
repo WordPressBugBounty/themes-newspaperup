@@ -4346,7 +4346,7 @@ textarea#comment {
   overflow: hidden;
 }
 .multi-post-widget .bs-blog-post.three.bsm.post-1 .title, .multi-post-widget .bs-blog-post.three.bsm.post-2 .title {
-  font-size: 18px;
+  font-size: 20px;
 }
 .multi-post-widget .bs-blog-post.three.lg {
   height: 520px;
@@ -5726,6 +5726,9 @@ table, th, td {
   .footer .img.zoom-img {
     height: 170px;
   }
+  .bs-slide .inner .title {
+    font-size: 27px;
+  }
 }
 @media (min-width: 375px) and (max-width: 575px) {
   .col-xxl {
@@ -5817,7 +5820,7 @@ table, th, td {
     height: 300px;
   }
   .bs-slide .inner .title {
-    font-size: 27px;
+    font-size: 22px;
   }
   .bs-blog-post.single .bs-header .title {
     font-size: 30px;
@@ -5841,6 +5844,18 @@ table, th, td {
   div#comments .comment-list .children > li:after {
     left: -1rem;
     width: 1rem;
+  }
+  .bs-blog-post .title {
+    font-size: 20px;
+  }
+  .bs-blog-post p {
+    font-size: 1rem;
+  }
+  .bs-blog-post.single .small.single p {
+    font-size: 18px;
+  }
+  .bs-info-author-block {
+    flex-direction: column;
   }
 }
 /*---------media_query-----*/
