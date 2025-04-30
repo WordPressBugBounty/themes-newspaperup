@@ -55,6 +55,7 @@ body {
   font-weight: 500;
   line-height: 1.4;
   font-display: swap;
+  font-size: 16px;
 }
 
 .wrapper {
@@ -2906,7 +2907,7 @@ footer.one .bs-footer-copyright {
   box-shadow: none;
 }
 .bs-blog-post.single .bs-header .title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 700;
   display: block;
 }
@@ -5283,6 +5284,46 @@ table, th, td {
   width: 100%;
 }
 
+html {
+  font-size: 100%;
+}
+
+/*
+  ##Device = Most of the screen
+  ##Screen = 1200px and under.
+*/
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 95%;
+  }
+}
+/* 
+  ##Device = Most of the tablets
+  ##Screen = 991px and under.
+*/
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+}
+/* 
+  ##Device = Most of the tablets
+  ##Screen = 767px and under.
+*/
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 85%;
+  }
+}
+/* 
+  ##Device = Most of the smartphones (portrait)
+  ##Screen = 575px and under.
+*/
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 80%;
+  }
+}
 @media (min-width: 992px) and (max-width: 1200px) {
   .nav-wp {
     display: unset;
