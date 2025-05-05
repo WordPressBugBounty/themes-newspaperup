@@ -253,8 +253,12 @@ if (!function_exists('newspaperup_post_title_content')) :
                 <h4 class="entry-title title"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4><?php
             }
             $newspaperup_enable_post_meta = newspaperup_get_option('newspaperup_enable_post_meta');
-            if ($newspaperup_enable_post_meta == true) {
-                newspaperup_post_meta();
+            if ($newspaperup_enable_post_meta == true) { ?>
+                <!-- Show meta for posts and other types, hide for pages in search results -->
+                <?php if ( is_search() && get_post_type() === 'page' ) {}
+                    else {
+                        newspaperup_post_meta();
+                    }
             }
             newspaperup_posted_content(); wp_link_pages( ); 
         echo '</article>'; 
