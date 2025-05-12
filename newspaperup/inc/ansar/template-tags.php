@@ -303,8 +303,9 @@ if (!function_exists('newspaperup_get_archive_title')) :
             return '';
         } elseif (is_404()) {
             return '';
-        } elseif (is_search()) {
-            return '';
+        } elseif(is_search()){   
+            /* translators: %s: search term */
+            return sprintf( esc_html__( 'Search Results for: %s', 'newspaperup' ), esc_html( get_search_query() ) );
         } else {
             return get_the_title();
         }
@@ -320,10 +321,15 @@ if (!function_exists('newspaperup_archive_page_title')) :
         
     function newspaperup_archive_page_title($title) {
         echo '<div class="bs-card-box page-entry-title">';
-        if (!empty(get_the_archive_title())) {
-            echo '<h1 class="entry-title title mb-0">' . get_the_archive_title() . '</h1>';
-        }
-        do_action('newspaperup_breadcrumb_content');
+         if(!empty(get_the_archive_title())){ ?>
+                <div class="page-entry-title-box">
+                <h1 class="entry-title title mb-0"><?php echo get_the_archive_title();?></h1>
+                <?php if(is_search()) {
+                    newspaperup_search_count();
+                }
+                echo '</div>';
+            }
+            do_action('newspaperup_breadcrumb_content');
         echo '</div>';
     }
     
@@ -489,3 +495,26 @@ function custom_html_search_label( $block_content, $block ) {
 }
 add_filter( 'render_block', 'custom_html_search_label', 10, 2 );
 
+
+if ( ! function_exists( 'newspaperup_search_count' ) ) :
+    function newspaperup_search_count() { 
+        global $wp_query;
+        $total_results = $wp_query->found_posts;
+        ?>
+        <!-- Results Count -->
+        <p class="search-results-count">
+            <?php
+            if ( $total_results > 0 ) {
+                // Translators: %s is the number of found results.
+                echo sprintf(
+                    _n( '%s result found', '%s results found', $total_results, 'newspaperup' ),
+                    number_format_i18n( $total_results )
+                );
+            } else {
+                echo esc_html__( 'No results found', 'newspaperup' );
+            }
+            ?>
+        </p>
+        <?php
+    }
+endif;

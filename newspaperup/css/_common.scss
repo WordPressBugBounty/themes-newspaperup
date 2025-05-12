@@ -499,6 +499,12 @@ p {
 figure {
 	margin: 0 0 1rem;
 }
+/* Search Page */
+.search-results-count{
+	margin-bottom: 0;
+	font-size: 17px;
+	margin-top: 5px;
+}
 /*---------------------------------------
 	Gradient Scroll Bar 
 -----------------------------------------*/
@@ -1907,7 +1913,7 @@ footer.one .bs-footer-copyright{
     align-items: center;
     padding: 10px 0;
     justify-content: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 	border-radius: 0;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;

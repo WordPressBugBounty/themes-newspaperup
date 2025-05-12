@@ -5,10 +5,6 @@
  */
 $blog_post_layout = (get_theme_mod('blog_post_layout','list-layout')); ?>
 <div class="col-lg-<?php echo ( !is_active_sidebar( 'sidebar-1' ) ? '12' :'8' ); ?>">
-    <h2>
-        <?php /* translators: %s: search term */
-        printf( esc_html__( 'Search Results for: %s','newspaperup'), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?>
-    </h2>
     <?php if ( have_posts() ) { /* Start the Loop */
         if($blog_post_layout == 'grid-layout'){
             get_template_part('content','grid');
