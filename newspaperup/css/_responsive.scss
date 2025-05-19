@@ -159,8 +159,11 @@ html {
   .bs-headfive .logo.justify-center{
     justify-content: flex-start;
   }
-  .navbar-wp nav ul.sm-clean li a:hover{
-    transform: scale(1);
+  .navbar-wp nav ul.sm-clean li a{
+    font-size: 16px;
+    &:hover{
+      transform: scale(1);
+    }
   }
   .bs-headsix .bs-menu-full .bs-social{
     display: none;
@@ -266,6 +269,9 @@ html {
   }
   .main-nav {
     padding: 8px 0;
+  }
+  .bs-blog-post p{
+    font-size: 16px;
   }
 }
 @media (max-width: 767.98px) {
@@ -719,9 +725,6 @@ html {
   }
   .bs-blog-post .title{
     font-size: 20px;
-  }
-  .bs-blog-post p{
-    font-size: 1rem;
   }
   .bs-blog-post.single .small.single p {
     font-size: 18px;

@@ -4960,6 +4960,9 @@ table, th, td {
   .bs-headfive .logo.justify-center {
     justify-content: flex-start;
   }
+  .navbar-wp nav ul.sm-clean li a {
+    font-size: 16px;
+  }
   .navbar-wp nav ul.sm-clean li a:hover {
     transform: scale(1);
   }
@@ -5065,6 +5068,12 @@ table, th, td {
   }
   .main-nav {
     padding: 8px 0;
+  }
+  .bs-blog-post p {
+    font-size: 16px;
+  }
+  .bs-cart .bs-cart-total{
+    display: none;
   }
 }
 @media (max-width: 767.98px) {
