@@ -927,6 +927,11 @@ html {
   font-size: 16px;
   cursor: pointer;
 }
+.right-nav .bs-cart {
+    display: flex;
+    overflow: visible;
+    gap: 2px;
+}
 .right-nav .bs-cart .bs-cart-count {
   width: 17px;
   height: 17px;
@@ -965,7 +970,9 @@ html {
   gap: 6px;
   justify-content: center;
 }
-
+.right-nav .bs-cart .bs-cart-total {
+    margin-left: 10px;
+}
 /*---------------------------------------
   Humbarger Styles           
 -----------------------------------------*/
@@ -3363,7 +3370,7 @@ textarea#comment {
   margin-bottom: 0;
 }
 .wp-block-search button.wp-block-search__button {
-  margin-left: 0;
+  margin-right: 0;
   line-height: 1;
   padding-top: 10px;
   padding-right: 15px;
@@ -4768,6 +4775,9 @@ table, th, td {
   font-weight: 600;
   margin-bottom: 0.5rem;
   display: block;
+}
+.comment-form p.form-submit {
+    margin-bottom: 0;
 }
 .comment-form-rating label {
   font-weight: 600;

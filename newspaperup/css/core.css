@@ -5150,6 +5150,10 @@ table, th, td {
   display: block;
 }
 
+.comment-form p.form-submit {
+  margin-bottom: 0;
+}
+
 .comment-form-rating label {
   font-weight: 600;
 }

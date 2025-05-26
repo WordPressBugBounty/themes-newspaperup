@@ -390,6 +390,9 @@ table, th, td {
   margin-bottom: 0.5rem;
   display: block;
 }
+.comment-form p.form-submit {
+    margin-bottom: 0;
+}
 .comment-form-rating label{
   font-weight: 600;
 }
