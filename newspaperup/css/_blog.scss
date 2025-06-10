@@ -819,6 +819,19 @@
         }
     }
 }
+.bs-info-author-block{
+    .flex-grow-1{
+        .title{
+            margin-bottom: 0;            
+            &+ p:empty{
+                display: none;
+            }
+            &+ p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 
 .bs-single-head {
     .bs-header {

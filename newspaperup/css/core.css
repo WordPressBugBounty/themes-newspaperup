@@ -2937,6 +2937,16 @@ footer.one .bs-footer-copyright {
   display: none;
 }
 
+.bs-info-author-block .flex-grow-1 .title {
+  margin-bottom: 0;
+}
+.bs-info-author-block .flex-grow-1 .title + p:empty {
+  display: none;
+}
+.bs-info-author-block .flex-grow-1 .title + p {
+  margin-bottom: 0;
+}
+
 .bs-single-head .bs-header {
   margin-bottom: 20px;
 }
