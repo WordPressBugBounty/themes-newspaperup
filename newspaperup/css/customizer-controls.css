@@ -181,12 +181,6 @@
   margin-bottom: 12px;
   line-height: 1.4;
 }
-.newspaperup-notice_text .panel-column-6 {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 .newspaperup-notice_text .notice p, .notice-title, div.updated p, div.error p, .form-table td .notice p  {
   padding-right: 25px; 
   font-size: 15px;
@@ -429,4 +423,44 @@ li#accordion-panel-Theme_colors_panel {
 }
 #accordion-section-newspaperup_support_form .accordion-section-title:after, #accordion-section-newspaperup_pro_upsell .accordion-section-title:after {
   content: '';
+}
+
+.newspaperup-notice {
+  position: relative;
+  padding: 8px;
+}
+.newspaperup-notice-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newspaperup-notice_text .panel-column-6{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.panel-column-6 .newspaperup-notice-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.panel-column-6 .newspaperup-notice-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.newspaperup-notice-link{ 
+  display:inline;
+  color: #222;
+}
+.admin-bar .newspaperup-btn-get-started, .admin-bar .newspaperup-btn-get-started-customize{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }

@@ -45,21 +45,27 @@ function newspaperup_deprecated_hook_admin_notice() {
  		                            ?>
  	                        </p>
                         <div class="panel-column-6">
-                            <a class="newspaperup-btn-get-started button button-primary button-hero newspaperup-button-padding" href="#" data-name="" data-slug="">
-                                <?php esc_html_e( 'Import Demo', 'newspaperup' ) ?>
-                            </a>
-                            <a class="newspaperup-btn-get-started-customize button button-primary button-hero newspaperup-button-padding" href="<?php echo esc_url( admin_url( '/customize.php' ) ); ?>" data-name="" data-slug=""><?php esc_html_e( 'Customize Site', 'newspaperup' ) ?></a>
-                            <div class="newspaperup-documentation">
-                                <span aria-hidden="true" class="dashicons dashicons-external"></span>
-                                <a class="newspaperup-documentation" href="<?php echo esc_url('https://docs.themeansar.com/docs/newspaperup-pro')?>" data-name="" data-slug="">
-                                    <?php esc_html_e( 'View Documentation', 'newspaperup' ) ?>
-                                </a>
+                            <div class="newspaperup-notice-buttons">
+                                <a class="newspaperup-btn-get-started button button-primary button-hero newspaperup-button-padding" href="#" data-name="" data-slug=""><span aria-hidden="true" class="dashicons dashicons-images-alt"></span><?php esc_html_e( 'Starter Sites', 'newspaperup' ) ?></a>
+                                <a class="newspaperup-btn-get-started-customize button button-primary button-hero newspaperup-button-padding" href="<?php echo esc_url( admin_url( '/customize.php' ) ); ?>" data-name="" data-slug=""><span aria-hidden="true" class="dashicons dashicons-welcome-widgets-menus"></span><?php esc_html_e( 'Customize Site', 'newspaperup' ) ?></a>
                             </div>
-                            <div class="newspaperup-demos">
-                                <span aria-hidden="true" class="dashicons dashicons-external"></span>
-                                <a class="newspaperup-demos" href="<?php echo esc_url('https://demos.themeansar.com/newspaperup-demos/')?>" data-name="" data-slug="">
-                                    <?php esc_html_e( 'View Demos', 'newspaperup' ) ?>
-                                </a>
+                            <div class="newspaperup-notice-links">
+                                <div class="newspaperup-documentation newspaperup-notice-link">
+                                    <span aria-hidden="true" class="dashicons dashicons-list-view"></span>
+                                    <a class="newspaperup-documentation" href="<?php echo esc_url('https://docs.themeansar.com/docs/newspaperup-lite/')?>" data-name="" data-slug=""><?php esc_html_e( 'View Documentation', 'newspaperup' ) ?></a>
+                                </div>
+                                <div class="newspaperup-demos newspaperup-notice-link">
+                                    <span aria-hidden="true" class="dashicons dashicons-images-alt"></span>
+                                    <a class="newspaperup-demos" href="<?php echo esc_url('https://demos.themeansar.com/newspaperup-demos')?>" data-name="" data-slug=""><?php esc_html_e( 'View Demos', 'newspaperup' ) ?></a>
+                                </div>
+                                <div class="newspaperup-support newspaperup-notice-link">
+                                    <span aria-hidden="true" class="dashicons dashicons-format-chat"></span>
+                                    <a class="newspaperup-support" href="<?php echo esc_url('https://themeansar.ticksy.com/')?>" data-name="" data-slug=""><?php esc_html_e( 'Support', 'newspaperup' ) ?></a>
+                                </div>
+                                <div class="newspaperup-videos newspaperup-notice-link">
+                                    <span aria-hidden="true" class="dashicons dashicons-video-alt3"></span>
+                                    <a class="newspaperup-videos" href="<?php echo esc_url('https://www.youtube.com/watch?v=sPSkTyux3DA&list=PLWpTqYqS4j-yDuU1OCJAX822WolcgrMbC')?>" data-name="" data-slug=""><?php esc_html_e( 'Video Tutorials', 'newspaperup' ) ?></a>
+                                </div>
                             </div>
                         </div>
                     </div>
