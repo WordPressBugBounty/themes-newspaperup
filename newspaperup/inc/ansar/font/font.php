@@ -20,13 +20,27 @@ function newspaperup_fonts_url() {
     $fonts_url = '';
 		
     $font_families = array();
- 
-	$font_families = array('Outfit:400,500,700|Lexend Deca:100,200,300,400,500,600,700,800,900|Kalam:300,400,500,600,700,800,900&display=swap|Open Sans:300,400,500,600,700,800,900&display=swap|Rokkitt:300,400,500,600,700,800,900&display=swap|Jost:300,400,500,600,700,800,900&display=swap|Poppins:300,400,500,600,700,800,900&display=swap|Lato:300,400,500,600,700,800,900&display=swap|Noto Serif:300,400,500,600,700,800,900&display=swap|Raleway:300,400,500,600,700,800,900&display=swap|Roboto:300,400,500,600,700,800,900&display=swap');
- 
-    $query_args = array(
-        'family' => urlencode( implode( '|', $font_families ) ),
-        'subset' => urlencode( 'latin,latin-ext' ),
-    );
+
+        $font_families = array(
+            'Outfit:300,400,500,700',
+            'Open Sans:300,400,600,700',
+            'Kalam:300,400,700',
+            'Rokkitt:300,400,700',
+            'Jost:300,400,500,700',
+            'Poppins:300,400,500,600,700',
+            'Lato:300,400,700',
+            'Noto Serif:300,400,700',
+            'Raleway:300,400,500,700',
+            'Roboto:300,400,500,700',
+            'Lexend Deca:100,200,300,400,500,600,700,800,900',
+        );
+
+        // Build the URL
+        $query_args = array(
+            'family' => urlencode( implode( '|', $font_families ) ),
+            'display' => 'swap',
+            'subset' => 'latin,latin-ext',
+        );
  
     return apply_filters( 'newspaperup_fonts_url', add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ) );
 
