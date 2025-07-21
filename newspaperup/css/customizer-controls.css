@@ -162,6 +162,7 @@
   flex: 0 1 30%;
   min-height: 100px;
   border-right: 1px solid #FCFCFD;
+  align-items: center;
 }
 .newspaperup-notice_text {
   flex: 0 1 70%;
