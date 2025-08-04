@@ -80,7 +80,7 @@ function newspaperup_get_default_theme_options() {
     // Typography Section.
     // Body
     $defaults['heading_fontfamily'] = 'Lexend Deca';
-    $defaults['heading_fontweight'] =  '700';
+    $defaults['heading_fontweight'] =  '600';
 
     // Meus
     $defaults['newspaperup_menu_fontfamily'] = 'Lexend Deca';

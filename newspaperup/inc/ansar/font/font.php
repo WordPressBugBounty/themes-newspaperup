@@ -15,34 +15,45 @@ function newspaperup_theme_fonts() {
     }
 }
 
+function newspaperup_get_google_fonts_list() {
+    return array(
+        'Outfit',
+        'Open Sans',
+        'Kalam',
+        'Rokkitt',
+        'Jost',
+        'Poppins',
+        'Lato',
+        'Noto Serif',
+        'Raleway',
+        'Roboto',
+        'Lexend Deca',
+    );
+}
+
 function newspaperup_fonts_url() {
-	
     $fonts_url = '';
-		
+    
+    // Step 1: Get font names
+    $fonts = newspaperup_get_google_fonts_list();
+    
+    // Step 2: Set a common weight string
+    $common_weights = '100,200,300,400,500,600,700,800,900';
+    
+    // Step 3: Format fonts for Google Fonts URL
     $font_families = array();
+    foreach ( $fonts as $font_name ) {
+        $font_families[] = $font_name . ':' . $common_weights;
+    }
 
-        $font_families = array(
-            'Outfit:300,400,500,700',
-            'Open Sans:300,400,600,700',
-            'Kalam:300,400,700',
-            'Rokkitt:300,400,700',
-            'Jost:300,400,500,700',
-            'Poppins:300,400,500,600,700',
-            'Lato:300,400,700',
-            'Noto Serif:300,400,700',
-            'Raleway:300,400,500,700',
-            'Roboto:300,400,500,700',
-            'Lexend Deca:100,200,300,400,500,600,700,800,900',
-        );
+    // Step 4: Generate the full Google Fonts URL
+    $query_args = array(
+        'family' => urlencode( implode( '|', $font_families ) ),
+        'display' => 'swap',
+        'subset'  => 'latin,latin-ext',
+    );
 
-        // Build the URL
-        $query_args = array(
-            'family' => urlencode( implode( '|', $font_families ) ),
-            'display' => 'swap',
-            'subset' => 'latin,latin-ext',
-        );
- 
-    return apply_filters( 'newspaperup_fonts_url', add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ) );
+    $fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
 
     return $fonts_url;
 }
