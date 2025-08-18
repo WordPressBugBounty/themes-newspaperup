@@ -143,7 +143,8 @@
     targetBody.style.paddingRight = '17px';
     clickableRemoveElement.focus();
   }
-  function handleClickRemove() {
+  function handleClickRemove(event) {
+    event.preventDefault();
     targetElement.classList.remove('from-right');
     clickableRemoveElementTwo.classList.remove('show'); 
     targetBody.style.overflow = null;
