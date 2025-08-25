@@ -803,7 +803,8 @@ figure {
 					line-height: 1.4;
 					letter-spacing: -.03em;;
 					cursor: pointer;
-					transition: all 0.2s ease 0s; 
+					transition: all 0.2s ease 0s;
+					font-family: var(--Fontmenus);
 					&:hover{
 						transform: scale(0.95);
 					}

@@ -1,5 +1,6 @@
 :root {
   --Fontheading: "Lexend Deca", sans-serif;
+  --Fontmenus: "Lexend Deca", sans-serif;
   --Fontbody: "Outfit", sans-serif;
   --Weightheading: 600;
   --bxbr: 3px solid #000;
@@ -914,6 +915,7 @@ figure {
   letter-spacing: -0.03em;
   cursor: pointer;
   transition: all 0.2s ease 0s;
+  font-family: var(--Fontmenus);
 }
 .navbar-wp nav ul.sm-clean li a:hover {
   transform: scale(0.95);
