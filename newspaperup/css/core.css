@@ -3119,10 +3119,14 @@ textarea#comment {
 }
 
 .bs-blog-post .small {
-  padding: 20px 0 0 0;
+  padding: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5rem;
+}
+
+.bs-blog-post:has(.bs-blog-thumb) .small {
+  padding: 20px 0 0 0;
 }
 
 .bs-single-head .container {

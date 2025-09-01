@@ -2273,6 +2273,9 @@ footer.one .bs-footer-copyright {
   padding: 0;
   align-items: center;
 }
+.list-blog.bs-blog-post.no-img {
+  display: flex;
+}
 .list-blog .bs-blog-thumb {
   border-radius: var(--bxbra);
   height: 100%;
