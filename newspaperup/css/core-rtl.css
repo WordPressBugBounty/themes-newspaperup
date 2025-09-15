@@ -31,6 +31,7 @@ body {
   font-display: swap;
   text-align: start;
   direction: rtl;
+  font-size: 16px;
 }
 .wrapper {
   width: 100%;
@@ -486,7 +487,7 @@ ol, ul{
 }
 p {
   margin: 0 0 15px 0;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.625;
 }
 .radius-0 {
@@ -5167,6 +5168,9 @@ table, th, td {
     justify-content: center;
     margin-top: 1rem;
   }
+  .right-nav .subscribe-btn:hover i {
+    visibility: visible;
+  }
 }
 @media (min-width: 768px) {
   .header-two .header-top .justify-space-between {
@@ -5455,6 +5459,9 @@ table, th, td {
   div#comments .comment-metadata .edit-link{
     padding-right: 0;
     padding-left: 3rem;
+  }
+  .bs-blog-post.single .small.single p {
+    font-size: 18px;
   }
 }
 /*---------media_query-----*/
