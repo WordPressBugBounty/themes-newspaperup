@@ -22,6 +22,21 @@ class Newspaperup_author_info extends WP_Widget {
 
         extract($args);
 
+        $defaults = array(
+            'title'    => '',
+            'name'     => '',
+            'desc'     => '',
+            'desg'     => '',
+            'image_uri'=> '',
+            'facebook' => '',
+            'twt'      => '',
+            'insta'    => '',
+            'youtube'  => '',
+            'open_btnone_new_window' => 0,
+        );
+        
+        $instance = wp_parse_args( (array) $instance, $defaults );
+
         echo '<!-- Start Author Widget -->' . $before_widget;
 
         $newspaperup_btnone_target = '_self';
@@ -83,34 +98,45 @@ class Newspaperup_author_info extends WP_Widget {
         <?php echo $after_widget . '<!-- End Author Widget -->';
 
     }
+   
     function update($new_instance, $old_instance) {
-
         $instance = $old_instance;
-        $instance['facebook'] = stripslashes(wp_filter_post_kses($new_instance['facebook']));
-        $instance['open_btnone_new_window'] = strip_tags($new_instance['open_btnone_new_window']);
-        $instance['image_uri'] = strip_tags($new_instance['image_uri']);
-        $instance['title'] = strip_tags($new_instance['title']);
-        $instance['name'] = strip_tags($new_instance['name']);
-        $instance['desc'] = strip_tags($new_instance['desc']);
-        $instance['desg'] = strip_tags($new_instance['desg']);
-        $instance['twt'] = stripslashes(wp_filter_post_kses($new_instance['twt']));
-        $instance['insta'] = stripslashes(wp_filter_post_kses($new_instance['insta']));
-        $instance['youtube'] = stripslashes(wp_filter_post_kses($new_instance['youtube']));
-		
-        $newspaperup_btnone_target = '_self';
-        if( !empty($instance['open_btnone_new_window']) ):
-            $newspaperup_btnone_target = '_blank';
-        endif;
+
+        // Basic text fields
+        $instance['title'] = sanitize_text_field( $new_instance['title'] ?? '' );
+        $instance['name']  = sanitize_text_field( $new_instance['name'] ?? '' );
+        $instance['desg']  = sanitize_text_field( $new_instance['desg'] ?? '' );
+
+        // Description - lets keep it plain text but use textarea sanitizer
+        $instance['desc'] = sanitize_textarea_field( $new_instance['desc'] ?? '' );
+
+        // Image URL and social URLs — sanitize as URLs
+        $instance['image_uri'] = esc_url_raw( $new_instance['image_uri'] ?? '' );
+        $instance['facebook']  = esc_url_raw( $new_instance['facebook'] ?? '' );
+        $instance['twt']       = esc_url_raw( $new_instance['twt'] ?? '' );
+        $instance['insta']     = esc_url_raw( $new_instance['insta'] ?? '' );
+        $instance['youtube']   = esc_url_raw( $new_instance['youtube'] ?? '' );
+
+        // Checkbox — ensure it's always 0 or 1 (avoids undefined index / null)
+        $instance['open_btnone_new_window'] = ! empty( $new_instance['open_btnone_new_window'] ) ? 1 : 0;
 
         return $instance;
-
     }
 
     function form($instance) {
-        $instance['title'] = (isset($instance['title'])?$instance['title']:'Author Details');
-        $instance['name'] = (isset($instance['name'])?$instance['name']:'');
-        $instance['desc'] = (isset($instance['desc'])?$instance['desc']:'');
-        $instance['desg'] = (isset($instance['desg'])?$instance['desg']:'');
+        $defaults = array(
+            'title' => 'Author Details',
+            'name'  => '',
+            'desc'  => '',
+            'desg'  => '',
+            'image_uri' => '',
+            'facebook' => '',
+            'twt' => '',
+            'insta' => '',
+            'youtube' => '',
+            'open_btnone_new_window' => 0,
+        );
+        $instance = wp_parse_args( (array) $instance, $defaults );
 
         ?>
         <p>
@@ -147,7 +173,7 @@ class Newspaperup_author_info extends WP_Widget {
 
         <p>
           <label for="<?php echo $this->get_field_id( 'desc' ); ?>"><?php _e( 'Description','newspaperup' ); ?></label> 
-          <input class="widefat" id="<?php echo $this->get_field_id( 'desc' ); ?>" name="<?php echo $this->get_field_name( 'desc' ); ?>" type="textarea" value="<?php echo esc_attr( $instance['desc'] ); ?>" />
+           <textarea class="widefat" id="<?php echo esc_attr($this->get_field_id( 'desc' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'desc' )); ?>"><?php echo esc_textarea( $instance['desc'] ); ?></textarea>
         </p>
       
             
@@ -195,12 +221,16 @@ class Newspaperup_author_info extends WP_Widget {
                     <input type="text" name="<?php echo $this->get_field_name('youtube'); ?>" id="<?php echo $this->get_field_id('youtube'); ?>" value="<?php if( !empty($instance['youtube']) ): echo $instance['youtube']; endif; ?>" class="widefat"/>
                 </td>
             </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="checkbox" name="<?php echo $this->get_field_name('open_btnone_new_window'); ?>" id="<?php echo $this->get_field_id('open_btnone_new_window'); ?>" <?php if( !empty($instance['open_btnone_new_window']) ): checked( (bool) $instance['open_btnone_new_window'], true ); endif; ?> ><?php esc_html_e('Open link in a new tab','newspaperup'); ?>
-                </td>
-            </tr>
         </table>
+        <p>
+            <label for="<?php echo esc_attr($this->get_field_id('open_btnone_new_window')); ?>">
+                <input type="checkbox" 
+                    id="<?php echo esc_attr($this->get_field_id('open_btnone_new_window')); ?>"
+                    name="<?php echo esc_attr($this->get_field_name('open_btnone_new_window')); ?>"
+                    value="1" <?php checked( $instance['open_btnone_new_window'], 1 ); ?> />
+                <?php esc_html_e( 'Open link in new tab','blogus' ); ?>
+            </label>
+        </p>
     <?php
 
     }
