@@ -2132,6 +2132,10 @@ footer.one .bs-footer-copyright {
      object-fit: contain;
 }
 
+.content-right .d-grid.column2 {
+  row-gap: 50px;
+}
+
 .bs-section.blog .bs-heading .bs-title {
   margin-bottom: 3rem;
 }
@@ -4543,7 +4547,7 @@ footer.one .bs-footer-copyright .bs-social {
 footer.one .bs-footer-copyright .info-right {
   display: flex;
   justify-content: flex-end;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 0;
   padding: 0;
