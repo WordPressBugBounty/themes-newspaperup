@@ -255,7 +255,9 @@ if (!function_exists('newspaperup_post_title_content')) :
             $newspaperup_enable_post_meta = newspaperup_get_option('newspaperup_enable_post_meta');
             if ($newspaperup_enable_post_meta == true) { ?>
                 <!-- Show meta for posts and other types, hide for pages in search results -->
-                <?php if ( is_search() && get_post_type() === 'page' ) {}
+                <?php 
+                $post_type = get_post_type();
+                if ( is_search() && ($post_type === 'page' || $post_type === 'product') ) {}
                     else {
                         newspaperup_post_meta();
                     }

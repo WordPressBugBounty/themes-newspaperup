@@ -73,7 +73,7 @@
                                 </div>
                                 <?php if( has_nav_menu( 'footer') ) { ?>
                                     <div class="col-lg-6 col-md-6 text-md-end text-xs">
-                                        <?php newspaperup_target_element('panel', 'nav_menus', 'Click To Edit Footer Menu.'); ?>
+                                        <?php newspaperup_target_element('panel', 'nav_menus', esc_html__('Click To Edit Footer Menu.', 'newspaperup')); ?>
                                         <?php wp_nav_menu( array(
                                                 'theme_location' => 'footer',
                                                 'container'  => 'nav-collapse collapse navbar-inverse-collapse',

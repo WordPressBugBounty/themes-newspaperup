@@ -225,4 +225,23 @@
 	range_live_media_load( 'newspaperup_footer_main_logo_width', 'footer .bs-footer-bottom-area .custom-logo, footer .bs-footer-copyright .custom-logo', [ 'width' ], 'px' );
 	range_live_media_load( 'newspaperup_footer_main_logo_height', 'footer .bs-footer-bottom-area .custom-logo, footer .bs-footer-copyright .custom-logo', [ 'height' ], 'px' );
 	
+
+	
+	function customizePreviewStyle(settingId, selector, property, unit = '') {
+		wp.customize(settingId, function(value) {
+			value.bind(function(newVal) {
+				if (property.startsWith('--')) { 
+					document.documentElement.style.setProperty(property, newVal + unit);
+				} else { 
+					let cssProperties = {};
+					cssProperties[property] = newVal + unit;
+					$(selector).css(cssProperties);
+				}
+			});
+		});
+	}
+	
+	customizePreviewStyle('top_bar_bg_color', '  .bs-head-detail, .bs-latest-news .bn_title .title i', 'background','');
+	customizePreviewStyle('top_bar_color', '.bs-head-detail, .bs-latest-news .bs-latest-news-slider a', 'color','');
+
 } )( jQuery );

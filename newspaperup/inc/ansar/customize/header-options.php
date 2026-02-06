@@ -246,6 +246,7 @@ Newspaperup_Customizer_Control::add_field(
         'settings'  => 'top_bar_color',
         'label' => esc_html__('Color', 'newspaperup'),
 		'section'  => 'header_top_bar',
+        'transport' => 'postMessage',
         'default' => '',
         'sanitize_callback' => 'newspaperup_sanitize_alpha_color',
 	)
@@ -256,6 +257,7 @@ Newspaperup_Customizer_Control::add_field(
         'settings'  => 'top_bar_bg_color',
         'label' => esc_html__('Background Color', 'newspaperup'),
 		'section'  => 'header_top_bar',
+        'transport' => 'postMessage',
         'default' => '',
         'sanitize_callback' => 'newspaperup_sanitize_alpha_color',
 	)

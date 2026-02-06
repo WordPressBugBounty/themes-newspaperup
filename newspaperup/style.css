@@ -4,8 +4,8 @@ Theme URI: https://themeansar.com/free-themes/newspaperup-free-magazine-blog-wor
 Author: Themeansar
 Author URI: http://themeansar.com
 Description: Newspaperup is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. Newspaperup is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. Newspaperup is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://demos.themeansar.com/newspaperup and documentation at https://docs.themeansar.com/docs/newspaperup/
-Version: 1.4.5
-Tested up to: 6.8
+Version: 1.6.2
+Tested up to: 6.9
 Requires PHP: 7.4
 Requires at least: 6.7
 Tags: two-columns, three-columns, left-sidebar, right-sidebar, translation-ready, custom-background, custom-logo, featured-images, footer-widgets, full-width-template, blog, e-commerce, entertainment
@@ -16,7 +16,7 @@ Text Domain: newspaperup
 /* ==========================================================================
    Theme Customizer Editor Icon
    ========================================================================== */
-.newspaperup-customizer-edit-icon{
+.newspaperup-customizer-edit-icon {
     position: absolute;
     float: left;
     width: 1px;
@@ -29,9 +29,10 @@ Text Domain: newspaperup
     box-shadow: none;
     outline: 0;
     z-index: 500;
-	left: 5%;
+    left: 5%;
 }
-.newspaperup-customizer-target-btn{
+
+.newspaperup-customizer-target-btn {
     position: absolute;
     left: -30px;
     top: 2px;
@@ -40,13 +41,13 @@ Text Domain: newspaperup
     height: 30px;
     min-width: 30px;
     min-height: 30px;
-    line-height: 1!important;
+    line-height: 1 !important;
     font-size: 18px;
     z-index: 5;
-    background: #3582c4!important;
+    background: #3582c4 !important;
     border-radius: 50%;
     border: 2px solid #fff;
-    box-shadow: 0 2px 1px rgba(60,67,74,.15);
+    box-shadow: 0 2px 1px rgba(60, 67, 74, .15);
     text-align: center;
     cursor: pointer;
     box-sizing: border-box;
@@ -55,30 +56,36 @@ Text Domain: newspaperup
     animation-duration: .4s;
     opacity: 0;
     pointer-events: none;
-    text-shadow: 0 -1px 1px #135e96,1px 0 1px #135e96,0 1px 1px #135e96,-1px 0 1px #135e96;
+    text-shadow: 0 -1px 1px #135e96, 1px 0 1px #135e96, 0 1px 1px #135e96, -1px 0 1px #135e96;
     animation-name: customize-partial-edit-shortcut-bounce-appear;
     pointer-events: auto;
 }
-.newspaperup-customizer-target-btn:hover{
-    background: #4f94d4!important;
+
+.newspaperup-customizer-target-btn:hover {
+    background: #4f94d4 !important;
 }
-.header-ads .newspaperup-customizer-edit-icon{
-	left: 18%;
+
+.header-ads .newspaperup-customizer-edit-icon {
+    left: 18%;
     top: -14%;
 }
-.collapse.navbar-collapse .newspaperup-customizer-edit-icon{
+
+.collapse.navbar-collapse .newspaperup-customizer-edit-icon {
     left: 3.5%;
     top: 7%;
 }
-.back-img .newspaperup-customizer-edit-icon[type_id="newspaperup_footer_widget_background"]{
-	top: 0%;
+
+.back-img .newspaperup-customizer-edit-icon[type_id="newspaperup_footer_widget_background"] {
+    top: 0%;
     left: 2.5%;
 }
+
 #main-nav .newspaperup-customizer-edit-icon {
     z-index: 99999;
 }
+
 span.customize-partial-edit-shortcut.customize-partial-edit-shortcut-newspaperup_archive_page_layout,
 span.customize-partial-edit-shortcut.customize-partial-edit-shortcut-newspaperup_single_page_layout,
 span.customize-partial-edit-shortcut.customize-partial-edit-shortcut-newspaperup_page_layout {
-  width: 1px !important;
+    width: 1px !important;
 }

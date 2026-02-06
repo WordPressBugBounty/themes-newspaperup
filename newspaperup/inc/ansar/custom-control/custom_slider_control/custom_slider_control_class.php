@@ -132,17 +132,17 @@ class Newspaperup_Customizer_Range_Control extends WP_Customize_Control {
 			<# if ( data.media_query ) { #>
 				<ul class="responsive-switchers responsive-switchers-open" data-plm="<# if( data.mobile ){ #> {{{data.mobile.min }}} <# } #>">
 					<li class="desktop">
-						<button type="button" class="preview-desktop active" data-device="desktop" title="Desktop">
+						<button type="button" class="preview-desktop active" data-device="desktop" title="<?php esc_attr_e( 'Desktop', 'newspaperup' ); ?>">
 							<i class="dashicons dashicons-desktop"></i>
 						</button>
 					</li>
 					<li class="tablet">
-						<button type="button" class="preview-tablet" data-device="tablet" title="Tablet">
+						<button type="button" class="preview-tablet" data-device="tablet" title="<?php esc_attr_e( 'Tablet', 'newspaperup' ); ?>">
 							<i class="dashicons dashicons-tablet"></i>
 						</button>
 					</li>
 					<li class="mobile">
-						<button type="button" class="preview-mobile" data-device="mobile" title="Mobile">
+						<button type="button" class="preview-mobile" data-device="mobile" title="<?php esc_attr_e( 'Mobile', 'newspaperup' ); ?>">
 							<i class="dashicons dashicons-smartphone"></i>
 						</button>
 					</li>
@@ -189,7 +189,7 @@ class Newspaperup_Customizer_Range_Control extends WP_Customize_Control {
 			<div class="desktop-range active">
 				<input type="range" class="range-slider__range" title="{{{data.label}}}" min="{{min}}" max="{{max}}" step="{{step}}" data-query="desktop" data-default="{{default_value}}" value="{{ value }}">
 				<input type="number" class="range-slider-value" title="{{{data.label}}}" min="{{min}}" max="{{max}}" step="{{step}}" value="{{ value }}">
-				<span class="range-reset-slider" title="Reset"><span class="dashicons dashicons-update"></span></span>
+				<span class="range-reset-slider" title="<?php esc_attr_e( 'Reset', 'newspaperup' ); ?>"><span class="dashicons dashicons-update"></span></span>
 			</div>
 			<# if ( data.media_query ) {
 
@@ -219,7 +219,7 @@ class Newspaperup_Customizer_Range_Control extends WP_Customize_Control {
 				<div class="tablet-range">
 					<input type="range" class="range-slider__range" title="{{{data.label}}}" min="{{min}}" max="{{max}}" step="{{step}}" data-query="tablet" data-default="{{default_value}}"  value="{{ value }}">
 					<input type="number" class="range-slider-value" title="{{{data.label}}}" min="{{min}}" max="{{max}}" step="{{step}}" value="{{ value }}">
-					<span class="range-reset-slider"><span class="dashicons dashicons-update"></span></span>
+					<span class="range-reset-slider" title="<?php esc_attr_e( 'Reset', 'newspaperup' ); ?>"><span class="dashicons dashicons-update"></span></span>
 				</div>
 
 				<# if( data.mobile ){
@@ -247,7 +247,7 @@ class Newspaperup_Customizer_Range_Control extends WP_Customize_Control {
 				<div class="mobile-range">
 					<input type="range" class="range-slider__range" title="{{{data.label}}}" min="{{min}}" max="{{max}}" step="{{step}}" data-query="mobile" data-default="{{default_value}}" value="{{ value }}">
 					<input type="number" class="range-slider-value" title="{{{data.label}}}" min="{{min}}" max="{{max}}" step="{{step}}" value="{{{ value }}}">
-					<span class="range-reset-slider"><span class="dashicons dashicons-update"></span></span>
+					<span class="range-reset-slider" title="<?php esc_attr_e( 'Reset', 'newspaperup' ); ?>"><span class="dashicons dashicons-update"></span></span>
 				</div>
 			<# } #>
 			<input type="hidden" class="range-collector" title="{{{data.label}}}" value="{{ data.value }}" {{{ data.link }}} >

@@ -160,6 +160,13 @@ if ( ! class_exists( 'Newspaperup_Theme_Setup' ) ) :
 			/* Add theme support for responsive embeds */
 			add_theme_support( 'responsive-embeds' );
 		
+			add_theme_support('custom-spacing');
+			add_theme_support('appearance-tools');
+			add_theme_support('custom-units');
+			add_theme_support('custom-line-height');
+			add_theme_support('border');
+			add_theme_support( 'link-color' );
+
 			//Custom logo
 			add_theme_support( 'custom-logo');
 

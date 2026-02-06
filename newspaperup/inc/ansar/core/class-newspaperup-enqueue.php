@@ -78,6 +78,8 @@ class Newspaperup_Enqueue_Scripts {
 		}
 	
 		wp_enqueue_script('jquery-cookie', get_template_directory_uri() . '/js/jquery.cookie.min.js', array('jquery'));
+
+		newspaperup_customize_options();
 	}
 	
 	public function newspaperup_admin_scripts() {
@@ -88,10 +90,22 @@ class Newspaperup_Enqueue_Scripts {
 	
 		wp_enqueue_style('newspaperup-admin-style', get_template_directory_uri() . '/css/admin-style.css' );
 
-		wp_enqueue_script('newspaperup-admin-script', get_template_directory_uri() . '/inc/ansar/customizer-admin/js/admin-script.js', array( 'jquery' ), '', true );
-		
-		wp_localize_script('newspaperup-admin-script', 'newspaperup_ajax_object',
-			array( 'ajax_url' => admin_url( 'admin-ajax.php' ) )
+		wp_enqueue_script(
+			'newspaperup-admin-script',
+			get_template_directory_uri() . '/inc/ansar/customizer-admin/js/admin-script.js',
+			array( 'jquery' ),
+			'',
+			true
+		);
+
+		wp_localize_script(
+			'newspaperup-admin-script',
+			'newspaperup_ajax_object',
+			array(
+				'ajax_url'      => admin_url( 'admin-ajax.php' ),
+				'install_nonce' => wp_create_nonce( 'newspaperup_install_plugin_nonce' ),
+				'can_install'   => current_user_can( 'install_plugins' ),
+			)
 		);
 		
 		wp_enqueue_style('newspaperup-admin-style-css', get_template_directory_uri() . '/css/customizer-controls.css');

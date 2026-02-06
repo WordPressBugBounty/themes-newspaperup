@@ -2,10 +2,10 @@
 Contributors: Themeansar
 Author: Themeansar
 Requires at least: WordPress 6.7
-Tested up to: WordPress 6.8
+Tested up to: WordPress 6.9
 Requires PHP: 7.4
-Stable tag: 1.4.5
-Version: 1.4.5
+Stable tag: 1.6.2
+Version: 1.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets,  theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, news
@@ -228,3 +228,54 @@ License Url: https://stocksnap.io/license
 
 = Version 1.4.5
 * Fixed Styling Issues.
+
+= Version 1.4.6
+* Fixed Styling Issues.
+
+= Version 1.4.7
+* Fixed Inputs RTL Styling Issues.
+
+= Version 1.4.8
+* Fixed Security Issues.
+
+= Version 1.4.9
+* Added Theme Support Function.
+
+= Version 1.5.0
+* Fixed Woocommerce Styling Issues.
+
+= Version 1.5.1
+* Added Woocommerce Category on Products.
+
+= Version 1.5.2
+* Fixed Product Meta Issue on Search Page
+
+= Version 1.5.3
+* Fixed WooCommerce Product Page Styling Issues.
+
+= Version 1.5.4
+* Added Navigation On Product Featured Image.
+
+= Version 1.5.5
+* Fixed WooCommerce Styling Issues.
+
+= Version 1.5.6
+* Fixed WooCommerce Product Price Color Issues.
+
+= Version 1.5.7
+* Fixed Shop Page Pagination Styling.
+
+= Version 1.5.8
+* Added Inline Style Function.
+
+= Version 1.5.9
+* Added Customize Preview Function.
+
+= Version 1.6.0
+* Fixed Double Category Styling Issue.
+
+= Version 1.6.1
+* Fixed Translating Issue.
+
+= Version 1.6.2
+* Fixed RTL Styling Issue.
