@@ -3004,6 +3004,10 @@ footer.one .bs-footer-copyright {
 .bs-related-post-info .bs-blog-post .title a {
   display: inline;
 }
+.bs-related-post-info .bs-blog-post .bs-blog-category {
+  display: inline-flex;
+  right: unset;
+}
 .bs-related-post-info .bs-blog-post .bs-blog-category > *:not(:nth-of-type(1), :nth-of-type(2), :nth-of-type(3), :nth-of-type(4)) {
   display: none;
 }
@@ -4463,6 +4467,10 @@ textarea#comment {
 
 .missedslider .bs-blog-post {
   box-shadow: none;
+}
+.missedslider .bs-blog-post .bs-blog-category {
+  display: inline-flex;
+  right: unset;
 }
 
 /*---------------------------------------

@@ -2819,6 +2819,10 @@ footer.one .bs-footer-copyright {
 .bs-related-post-info .bs-blog-post .title a {
   display: inline;
 }
+.bs-related-post-info .bs-blog-post .bs-blog-category {
+    display: inline-flex;
+    right: unset;
+}
 /*----- comments -----*/
 .bs-blog-post img {
   max-width: 100%;
@@ -4186,6 +4190,10 @@ textarea#comment {
 }
 .missedslider .bs-blog-post {
   box-shadow: none;
+}
+.missedslider .bs-blog-post .bs-blog-category {
+    display: inline-flex;
+    right: unset;
 }
 /*---------------------------------------
   404 Page 

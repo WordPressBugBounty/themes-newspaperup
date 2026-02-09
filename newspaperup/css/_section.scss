@@ -74,6 +74,11 @@
 // missed slider
 .missedslider .bs-blog-post {
     box-shadow: none;
+
+	.bs-blog-category{
+		display: inline-flex;
+		right: unset;
+	}
 }
 /*---------------------------------------
 	404 Page 
