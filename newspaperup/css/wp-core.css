@@ -116,7 +116,6 @@ var,
 samp,
 pre {
   font-family: Inconsolata, monospace;
-  -webkit-hyphens: none;
   hyphens: none;
 }
 
@@ -287,14 +286,14 @@ fieldset p {
 }
 
 .gallery-item {
-  margin: 0;
-  padding: 0.5em;
-}
-.gallery-item {
   float: left;
 }
 .rtl .gallery-item {
   float: right;
+}
+.gallery-item {
+  margin: 0;
+  padding: 0.5em;
 }
 
 .gallery-item img {
@@ -770,14 +769,16 @@ pre.wp-block-code a,
 .comment-body .reply {
   position: absolute;
   top: 3.2rem;
-  right: auto;
-  left: auto;
 }
 .comment-body .reply {
   right: 2rem;
 }
 .rtl .comment-body .reply {
   left: 2rem;
+}
+.comment-body .reply {
+  right: auto;
+  left: auto;
 }
 
 .comment-reply-title {

@@ -1628,7 +1628,7 @@ form.search-form label .search-field {
   margin-bottom: 20px;
   padding: 0;
   position: relative;
-  gap: 10px;
+  gap: 0px;
   justify-content: space-between;
 }
 .bs-widget-title .title {
@@ -1666,7 +1666,7 @@ form.search-form label .search-field {
   border-radius: 8px;
 }
 .bs-widget-title.one .title span {
-  display: none;
+  display: inline-block;
 }
 .bs-widget-title.two .title {
   width: auto;
@@ -1695,14 +1695,14 @@ form.search-form label .search-field {
   border-radius: 50%;
 }
 .bs-widget-title.three .title span::before {
-  left: 10px;
+  right: 10px;
   height: 15px;
   width: 15px;
 }
 .bs-widget-title.three .title span::after {
   width: 8px;
   height: 8px;
-  left: 0;
+  right: 0;
 }
 .bs-widget-title.three .title span i {
   display: none;
@@ -2821,7 +2821,6 @@ footer.one .bs-footer-copyright {
 }
 .bs-related-post-info .bs-blog-post .bs-blog-category {
     display: inline-flex;
-    right: unset;
 }
 /*----- comments -----*/
 .bs-blog-post img {
@@ -4193,7 +4192,6 @@ textarea#comment {
 }
 .missedslider .bs-blog-post .bs-blog-category {
     display: inline-flex;
-    right: unset;
 }
 /*---------------------------------------
   404 Page 
