@@ -9,15 +9,26 @@
 <!-- </main> -->
 <?php do_action('newspaperup_action_footer_missed_section'); ?>
     <!--==================== FOOTER AREA ====================-->
-    <?php $footer_bg_img = newspaperup_get_option('newspaperup_footer_bg_img');
+    <?php 
     $newspaperup_footer_overlay_color = get_theme_mod('newspaperup_footer_overlay_color');
-    function get_footer_bg_img() {
-        if ( newspaperup_get_option('newspaperup_footer_bg_img') > 0 ) {
-            return wp_get_attachment_url( newspaperup_get_option('newspaperup_footer_bg_img') );
+    $footer_bg_img = newspaperup_get_option('newspaperup_footer_bg_img');
+
+    if ( ! function_exists('get_footer_bg_img') ) {
+        function get_footer_bg_img() {
+            $img_id = newspaperup_get_option('newspaperup_footer_bg_img');
+            if ($img_id) {
+                return wp_get_attachment_url($img_id);
+            }
+            return '';
         }
-    } ?>
-    <footer class="footer one <?php echo esc_attr($footer_bg_img != '' ? 'back-img' : '' ); ?>"
-    <?php if($footer_bg_img != '') { ?> style="background-image:url('<?php echo get_footer_bg_img()?>');" <?php } ?> >
+    }
+
+    $footer_bg_url = get_footer_bg_img();
+    ?>
+
+    <footer class="footer one<?php echo esc_attr($footer_bg_url ? ' back-img' : ''); ?>"
+    <?php if($footer_bg_url) { ?> style="background-image:url('<?php echo esc_url($footer_bg_url); ?>');" <?php } ?>>
+    <!--overlay-->
         <div class="overlay" style="background-color: <?php echo ($newspaperup_footer_overlay_color);?>;">
             <!--Start bs-footer-widget-area-->
             <?php if ( is_active_sidebar( 'footer_widget_area' ) ) { ?>
