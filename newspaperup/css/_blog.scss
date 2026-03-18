@@ -824,9 +824,6 @@
             &:has(+ p:empty){
                 margin-bottom: 0;            
             }
-            &+ p:empty{
-                display: none;
-            }
             &+ p{
                 margin: 0;
             }

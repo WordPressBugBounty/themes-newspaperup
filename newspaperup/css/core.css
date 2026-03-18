@@ -2915,9 +2915,6 @@ footer.one .bs-footer-copyright {
 .bs-info-author-block .flex-grow-1 .title:has(+ p:empty) {
   margin-bottom: 0;
 }
-.bs-info-author-block .flex-grow-1 .title + p:empty {
-  display: none;
-}
 .bs-info-author-block .flex-grow-1 .title + p {
   margin: 0;
 }
