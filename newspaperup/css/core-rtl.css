@@ -2525,7 +2525,7 @@ footer.one .bs-footer-copyright {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
   border-width: 2px;
   border-style: solid;
 }
@@ -2871,7 +2871,7 @@ footer.one .bs-footer-copyright {
 .comment-content {
   position: relative;
   z-index: 0;
-  padding: 16px 0px 16px 70px;
+  padding: 16px 0px 0px 70px;
 }
 .comment-content p {
   margin-bottom: 0;
@@ -5547,7 +5547,7 @@ table, th, td {
   }
   div#comments .comment-body .reply {
     left: 0.8rem;
-    top: 8.2rem;
+    top: 8.3rem;
   }
   div#comments .comment-body .reply a {
     padding-right: 8px;
@@ -5564,7 +5564,7 @@ table, th, td {
   }
   div#comments .comment-metadata .edit-link{
     padding-right: 0;
-    padding-left: 3rem;
+    padding-left: 4rem;
   }
   .bs-blog-post.single .small.single p {
     font-size: 18px;
