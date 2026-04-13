@@ -48,7 +48,11 @@ function newspaperup_deprecated_hook_admin_notice() {
                         </p>
                         <div class="panel-column-6">
                             <div class="newspaperup-notice-buttons">
-                                <a class="newspaperup-btn-get-started button button-primary button-hero newspaperup-button-padding" href="#" data-name="" data-slug=""><span aria-hidden="true" class="dashicons dashicons-images-alt"></span><?php esc_html_e( 'Get Started', 'newspaperup' ) ?></a>
+                                <?php if ( is_plugin_active( 'ansar-import/ansar-import.php' ) ) : ?>
+                                <a class="newspaperup-btn-get-started button button-primary button-hero newspaperup-button-padding" href="<?php echo esc_url(admin_url( 'admin.php?page=ansar-demo-import' )); ?>" data-name="" data-slug=""><span aria-hidden="true" class="dashicons dashicons-images-alt"></span><?php esc_html_e( 'Get Started', 'newspaperup' ) ?></a>
+                                <?php else : ?>
+                                <a class="newspaperup-btn-get-started load button button-primary button-hero newspaperup-button-padding" href="#" data-name="" data-slug=""><span aria-hidden="true" class="dashicons dashicons-images-alt"></span><?php esc_html_e( 'Get Started', 'newspaperup' ) ?></a>
+                                 <?php endif; ?>
                                 <a class="newspaperup-btn-get-started-customize button button-secondary button-hero newspaperup-button-padding" href="<?php echo esc_url( admin_url( '/customize.php' ) ); ?>" data-name="" data-slug=""><span aria-hidden="true" class="dashicons dashicons-welcome-widgets-menus"></span><?php esc_html_e( 'Customize Site', 'newspaperup' ) ?></a>
                             </div>
                             <div class="newspaperup-notice-links">

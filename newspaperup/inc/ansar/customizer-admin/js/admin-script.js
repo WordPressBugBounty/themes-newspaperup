@@ -1,6 +1,6 @@
 (function ($) {
   $(document).ready(function () {
-    $('.newspaperup-btn-get-started').on('click', function (e) {
+    $('.newspaperup-btn-get-started.load').on('click', function (e) {
       e.preventDefault();
       if (!newspaperup_ajax_object.can_install) {
         alert('Sorry, you are not allowed to access this page.');
