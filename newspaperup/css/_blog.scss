@@ -904,6 +904,9 @@
             margin: 0;
         }
     }
+    &:has(.bs-author-desc){
+        flex-direction: column;
+    }
 }
 /*----- Related Posts -----*/
 .bs-related-post-info{

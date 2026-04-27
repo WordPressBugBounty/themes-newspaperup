@@ -2988,6 +2988,9 @@ footer.one .bs-footer-copyright {
 .bs-info-author-block.py-4.px-3.mb-4 .bs-author-pic img {
   margin: 0;
 }
+.bs-info-author-block:has(.bs-author-desc) {
+  flex-direction: column;
+}
 
 /*----- Related Posts -----*/
 .bs-related-post-info {
