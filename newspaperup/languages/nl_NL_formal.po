@@ -1,0 +1,1201 @@
+# Translation of Themes - Newspaperup in Dutch
+# This file is distributed under the same license as the Themes - Newspaperup package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-05-02 14:10+0530\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.0.9\n"
+"Language: nl\n"
+"Project-Id-Version: Themes - Newspaperup\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#. Description of the theme
+#: style.css
+msgid "Newspaperup is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. Newspaperup is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. Newspaperup is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://demos.themeansar.com/newspaperup and documentation at https://docs.themeansar.com/docs/newspaperup/"
+msgstr "Newspaperup is een snel, schoon, modern ogend best responsive nieuws tijdschrift WordPress Thema. Het Thema is volledig widgetized, zodat Gebruikers de inhoud kunnen beheren met behulp van gebruiksvriendelijke widgets. Newspaperup is geschikt voor dynamisch nieuws, kranten, tijdschriften, uitgevers, blogs, redacteuren, online en gaming tijdschriften, nieuwsportalen, persoonlijke blogs, kranten, publicatie of beoordeling sites en elke creatieve site. Newspaperup is SEO vriendelijk, WPML, Gutenberg, klaar voor vertaling en RTL. Live voorbeeld: https://demos.themeansar.com/newspaperup en documentatie op https://docs.themeansar.com/docs/newspaperup/"
+
+#. Theme Name of the theme
+#: style.css inc/ansar/customizer-admin/admin-plugin-install.php:83
+msgid "Newspaperup"
+msgstr "Newspaperup"
+
+#: inc/ansar/custom-control/custom_slider_control/custom_slider_control_class.php:192
+#: inc/ansar/custom-control/custom_slider_control/custom_slider_control_class.php:222
+#: inc/ansar/custom-control/custom_slider_control/custom_slider_control_class.php:250
+msgid "Reset"
+msgstr "Reset"
+
+#: inc/ansar/custom-control/custom_slider_control/custom_slider_control_class.php:145
+msgid "Mobile"
+msgstr "Mobiel"
+
+#: inc/ansar/custom-control/custom_slider_control/custom_slider_control_class.php:140
+msgid "Tablet"
+msgstr "Tablet"
+
+#: inc/ansar/custom-control/custom_slider_control/custom_slider_control_class.php:135
+msgid "Desktop"
+msgstr "Desktop"
+
+#: footer.php:87
+msgid "Click To Edit Footer Menu."
+msgstr "Klik om het menu van de footer te bewerken."
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:135
+msgid "Plugin installed and activated successfully."
+msgstr "Plugin succesvol geïnstalleerd en geactiveerd."
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:129
+msgid "Plugin installation failed."
+msgstr "Plugin installatie mislukt."
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:122
+msgid "Failed to fetch plugin information."
+msgstr "Het is niet gelukt om plugin informatie op te halen."
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:102
+msgid "Sorry, you are not allowed to access this page."
+msgstr "U heeft geen toestemming om deze pagina te bekijken."
+
+#: inc/ansar/widgets/widget-author-info.php:231
+msgid "Open link in new tab"
+msgstr "Open link in nieuwe tab"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:52
+#: inc/ansar/customizer-admin/admin-plugin-install.php:54
+msgid "Get Started"
+msgstr "Ga aan de slag"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:73
+msgid "Video Tutorials"
+msgstr "Video tutorials"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:69
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: inc/ansar/template-tags.php:516
+msgid "No results found"
+msgstr "Geen resultaten gevonden"
+
+#: inc/ansar/template-tags.php:512
+msgid "%s result found"
+msgid_plural "%s results found"
+msgstr[0] "%s resultaat gevonden"
+msgstr[1] "%s resultaten gevonden"
+
+#: inc/ansar/hooks/hook-side-menu-section.php:29
+msgid "in the admin."
+msgstr "in de beheer."
+
+#: inc/ansar/hooks/hook-side-menu-section.php:25
+msgid "This is an example widget to show how the Header Toggle Sidebar looks by default. You can add custom widgets from the"
+msgstr "Dit is een voorbeeldwidget om te laten zien hoe de header toggle zijbalk er standaard uitziet. U kunt aangepaste widgets toevoegen vanuit de"
+
+#: inc/ansar/template-tags.php:136
+msgid "No Comments"
+msgstr "Geen reacties"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:39
+msgid "Thank you for choosing %1$s theme. To take full advantage of the complete features of the theme, click Get Started and install and activate the %2$s plugin, then use the demo importer and install the %3$s demo according to your need."
+msgstr "Bedankt voor het kiezen van het %1$s thema. Om ten volle te profiteren van de volledige functies van het thema, klikt u op Aan de slag en installeert en activeert u de %2$s plugin, gebruik dan de demo importeur en installeer de %3$s demo volgens uw behoefte."
+
+#. Template Name of the theme
+msgid "Frontpage"
+msgstr "Voorpagina"
+
+#. Template Name of the theme
+msgid "Full Width Page"
+msgstr "Pagina volledige breedte"
+
+#: sections/page-data.php:37
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: sections/content-search.php:16
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Geen resultaten die voldeden aan uw zoekopdracht criteria. Probeer het alstublieft opnieuw met andere keywords."
+
+#: sections/content-search.php:13
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#. translators: %s: search term
+#: inc/ansar/template-tags.php:310
+msgid "Search Results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: inc/ansar/widgets/widgets-base.php:208
+msgctxt "Remove"
+msgid "X"
+msgstr "X"
+
+#: inc/ansar/widgets/widgets-base.php:197
+msgid "Choose Image"
+msgstr "Kies afbeelding"
+
+#: inc/ansar/widgets/widgets-base.php:196
+msgid "Select Image"
+msgstr "Afbeelding selecteren"
+
+#: inc/ansar/widgets/widgets-base.php:195
+msgid "Upload"
+msgstr "Upload"
+
+#: inc/ansar/widgets/widget-posts-slider.php:23
+msgid "AR: Posts Slider"
+msgstr "AR: slider voor berichten"
+
+#: inc/ansar/widgets/widget-posts-list.php:126
+msgid "Post Count Per Row"
+msgstr "Aantal berichten per rij"
+
+#: inc/ansar/widgets/widget-posts-list.php:124
+msgid "Number of Posts to Show"
+msgstr "Aantal berichten om weer te geven"
+
+#: inc/ansar/widgets/widget-posts-list.php:120
+msgid "Posts List"
+msgstr "Berichten lijst"
+
+#: inc/ansar/widgets/widget-posts-list.php:111
+msgid "2 Posts"
+msgstr "2 berichten"
+
+#: inc/ansar/widgets/widget-posts-list.php:110
+msgid "1 Post"
+msgstr "1 bericht"
+
+#: inc/ansar/widgets/widget-posts-list.php:25
+msgid "AR: Posts List"
+msgstr "AR: berichtenlijst"
+
+#: inc/ansar/widgets/widget-posts-list.php:21
+msgid "Displays posts from selected category in a list."
+msgstr "Toont berichten van de geselecteerde categorie in een lijst."
+
+#: inc/ansar/widgets/widget-posts-double-category.php:192
+msgid "Select category 2"
+msgstr "Selecteren categorie 2"
+
+#: inc/ansar/widgets/widget-posts-double-category.php:191
+msgid "Title 2"
+msgstr "Titel 2"
+
+#: inc/ansar/widgets/widget-posts-double-category.php:189
+msgid "Select category 1"
+msgstr "Categorie 1 selecteren"
+
+#: inc/ansar/widgets/widget-posts-double-category.php:188
+msgid "Title 1"
+msgstr "Titel 1"
+
+#: inc/ansar/widgets/widget-posts-double-category.php:24
+msgid "AR: Double Categories Posts"
+msgstr "AR: dubbele categorieën berichten"
+
+#: inc/ansar/widgets/widget-posts-double-category.php:20
+msgid "Displays posts from 2 selected categories in double column."
+msgstr "Toont berichten uit 2 geselecteerde categorieën in dubbele kolom."
+
+#: inc/ansar/widgets/widget-posts-carousel.php:24
+msgid "AR: Posts Carousel"
+msgstr "AR: berichtencarrousel"
+
+#: inc/ansar/widgets/widget-posts-carousel.php:20
+msgid "Displays posts carousel from selected category."
+msgstr "Toont berichtencarrousel van geselecteerde categorie."
+
+#: inc/ansar/widgets/widget-latest-news.php:120
+msgid "Number of Post to Show"
+msgstr "Aantal te tonen berichten"
+
+#: inc/ansar/widgets/widget-latest-news.php:24
+msgid "AR: Latest News Post"
+msgstr "AR: laatste nieuws bericht"
+
+#: inc/ansar/widgets/widget-latest-news.php:20
+msgid "Displays posts from selected category in single column."
+msgstr "Toont berichten uit de geselecteerde categorie in een enkele kolom."
+
+#: inc/ansar/widgets/widget-featured-post-widget.php:120
+msgid "All categories"
+msgstr "Alle categorieën"
+
+#: inc/ansar/widgets/widget-featured-post-widget.php:111
+msgid "Title: "
+msgstr "Titel: "
+
+#: inc/ansar/widgets/widget-featured-post-widget.php:12
+msgid "AR: Featured Posts"
+msgstr "AR: uitgelichte berichten"
+
+#: inc/ansar/widgets/widget-featured-post-widget.php:10
+#: inc/ansar/widgets/widget-featured-post-widget.php:105
+msgid "Featured Posts"
+msgstr "Uitgelichte berichten"
+
+#: inc/ansar/widgets/widget-author-info.php:216
+msgid "Youtube"
+msgstr "YouTube"
+
+#: inc/ansar/widgets/widget-author-info.php:205
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/ansar/widgets/widget-author-info.php:194
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/ansar/widgets/widget-author-info.php:183
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/ansar/widgets/widget-author-info.php:169
+msgid "Designation"
+msgstr "Bestemming"
+
+#: inc/ansar/widgets/widget-author-info.php:164
+msgid "Name"
+msgstr "Naam"
+
+#: inc/ansar/widgets/widget-author-info.php:160
+msgid "Upload Image"
+msgstr "Afbeelding uploaden"
+
+#: inc/ansar/widgets/widget-author-info.php:153
+msgid "Uploaded image"
+msgstr "Geüploade afbeelding"
+
+#: inc/ansar/widgets/widget-author-info.php:147
+msgid "Author Image"
+msgstr "Auteur afbeelding"
+
+#: inc/ansar/widgets/widget-author-info.php:17
+msgid "AR: Author Info"
+msgstr "AR: auteursinfo"
+
+#: inc/ansar/widgets/widget-3-column-slider.php:23
+msgid "AR: 3 Column Posts Slider"
+msgstr "AR: 3 kolommen berichten slider"
+
+#: inc/ansar/widgets/widget-3-column-slider.php:19
+#: inc/ansar/widgets/widget-posts-slider.php:19
+msgid "Displays posts slider from selected category."
+msgstr "Toont een slider voorstelling van berichten uit de geselecteerde categorie."
+
+#: inc/ansar/widgets/popular_tab_widget.php:107
+#: inc/ansar/widgets/widget-3-column-slider.php:106
+#: inc/ansar/widgets/widget-posts-carousel.php:119
+#: inc/ansar/widgets/widget-posts-list.php:122
+#: inc/ansar/widgets/widget-posts-slider.php:112
+msgid "Select category"
+msgstr "Selecteer categorie"
+
+#: inc/ansar/widgets/popular_tab_widget.php:105
+msgid "Enable Categorised Tab"
+msgstr "Inschakelen gecategoriseerde tab"
+
+#: inc/ansar/widgets/popular_tab_widget.php:103
+msgid "Categorised Posts"
+msgstr "Gecategoriseerde berichten"
+
+#: inc/ansar/widgets/popular_tab_widget.php:98
+msgid "Popular Posts"
+msgstr "Populaire berichten"
+
+#: inc/ansar/widgets/popular_tab_widget.php:95
+msgid "Latest Posts"
+msgstr "Nieuwste berichten"
+
+#: inc/ansar/widgets/popular_tab_widget.php:90
+#: inc/ansar/widgets/widget-3-column-slider.php:98
+#: inc/ansar/widgets/widget-posts-list.php:105
+#: inc/ansar/widgets/widget-posts-slider.php:102
+msgid "No"
+msgstr "Nee"
+
+#: inc/ansar/widgets/popular_tab_widget.php:89
+#: inc/ansar/widgets/widget-3-column-slider.php:97
+#: inc/ansar/widgets/widget-posts-list.php:104
+#: inc/ansar/widgets/widget-posts-slider.php:101
+msgid "Yes"
+msgstr "Ja"
+
+#: inc/ansar/widgets/popular_tab_widget.php:44
+#: inc/ansar/widgets/popular_tab_widget.php:106
+msgid "Trending"
+msgstr "Trending"
+
+#: inc/ansar/widgets/popular_tab_widget.php:40
+#: inc/ansar/widgets/popular_tab_widget.php:96
+msgid "Latest"
+msgstr "Nieuwste"
+
+#: inc/ansar/widgets/popular_tab_widget.php:39
+#: inc/ansar/widgets/popular_tab_widget.php:99
+msgid "Popular"
+msgstr "Populair"
+
+#: inc/ansar/widgets/popular_tab_widget.php:16
+msgid "AR: Popular Tab"
+msgstr "AR: populair tab"
+
+#: inc/ansar/widgets/popular_tab_widget.php:14
+msgid "Popular Tab"
+msgstr "Populair tab"
+
+#: inc/ansar/template-tags.php:352
+msgid "Read More"
+msgstr "Lees meer"
+
+#: inc/ansar/template-tags.php:139
+msgid "Comment"
+msgstr "Reactie"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/ansar/template-functions.php:285
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Bewerk <span class=\"screen-reader-text\">%s</span>"
+
+#: inc/ansar/hooks/hook-single-page.php:9 sections/single-author.php:5
+msgid "By"
+msgstr "Door"
+
+#: inc/ansar/hooks/hook-side-menu-section.php:26
+#: inc/ansar/hooks/hook-side-menu-section.php:27
+msgid "widgets"
+msgstr "widgets"
+
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:497
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:530
+msgid "Add Icon"
+msgstr "Icoon toevoegen"
+
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:492
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:522
+msgid "Remove Icon"
+msgstr "Icoon verwijderen"
+
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:475
+msgid "Social icons"
+msgstr "Sociale iconen"
+
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:457
+msgid "Note: Some icons may not be displayed here. You can see the full list of icons at %1$s."
+msgstr "Opmerking: enkele iconen worden hier niet getoond. U kunt een volledige lijst van iconen zien via %1$s."
+
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:321
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:404
+msgid "Delete field"
+msgstr "Veld verwijderen"
+
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:38
+msgid "Customizer Repeater"
+msgstr "Customizer herhaler"
+
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:33
+msgid "Add new field"
+msgstr "Nieuw veld toevoegen"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:61
+msgid "View Demos"
+msgstr "Bekijk demo's"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:65
+msgid "View Documentation"
+msgstr "Bekijk documentatie"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:56
+msgid "Customize Site"
+msgstr "Site aanpassen"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:44
+msgid "Ansar Import"
+msgstr "Ansar Import"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:34
+msgid "Welcome to %1$s"
+msgstr "Welkom bij %1$s"
+
+#: inc/ansar/customizer-admin/admin-plugin-install.php:26
+msgid "Hello, "
+msgstr "Hallo, "
+
+#: inc/ansar/customize/theme-options.php:768
+msgid "Menu Font"
+msgstr "Menu lettertype"
+
+#: inc/ansar/customize/theme-options.php:755
+msgid "Font Weight"
+msgstr "Lettertype gewicht"
+
+#: inc/ansar/customize/theme-options.php:744
+#: inc/ansar/customize/theme-options.php:777
+msgid "Font Family"
+msgstr "Lettertype familie"
+
+#: inc/ansar/customize/theme-options.php:735
+msgid "Heading"
+msgstr "Koptekst"
+
+#: inc/ansar/customize/theme-options.php:716
+#: inc/ansar/customize/theme-options.php:725
+msgid "Typography"
+msgstr "Typografie"
+
+#: inc/ansar/customize/theme-options.php:676
+msgid "Scroll To Top"
+msgstr "Scrol naar boven"
+
+#: inc/ansar/customize/theme-options.php:667
+msgid "Scroller"
+msgstr "Scroller"
+
+#: inc/ansar/customize/theme-options.php:634
+#: inc/ansar/customize/theme-options.php:644
+msgid "Theme Mode"
+msgstr "Thema modus"
+
+#: inc/ansar/customize/theme-options.php:624
+msgid "Hover Color (Dark Layout)"
+msgstr "Hoveren kleur (donkere lay-out)"
+
+#: inc/ansar/customize/theme-options.php:614
+msgid "Color (Dark Layout)"
+msgstr "Tijd kleur (donkere lay-out)"
+
+#: inc/ansar/customize/theme-options.php:604
+msgid "Hover Color"
+msgstr "Hoveren kleur"
+
+#: inc/ansar/customize/theme-options.php:574
+#: inc/ansar/customize/theme-options.php:583
+msgid "Site Title/Tagline"
+msgstr "Site titel/slogan"
+
+#: inc/ansar/customize/theme-options.php:550
+msgid "Category Color"
+msgstr "Categorie kleur"
+
+#: inc/ansar/customize/theme-options.php:541
+msgid "Theme Colors"
+msgstr "Thema kleuren"
+
+#: inc/ansar/customize/theme-options.php:521
+#: inc/ansar/customize/theme-options.php:531
+msgid "Sticky Sidebar"
+msgstr "Sticky zijbalk"
+
+#: inc/ansar/customize/theme-options.php:501
+msgid "Post Comments"
+msgstr "Bericht reacties"
+
+#: inc/ansar/customize/theme-options.php:480
+msgid "Author Details"
+msgstr "Details van de auteur"
+
+#: inc/ansar/customize/theme-options.php:438
+#: inc/ansar/customize/theme-options.php:458 sections/single-related.php:5
+msgid "Related Posts"
+msgstr "Gerelateerde berichten"
+
+#: inc/ansar/customize/theme-options.php:409
+msgid "Tags"
+msgstr "Tags"
+
+#: inc/ansar/customize/theme-options.php:378
+msgid "Hide/Show Sharing Icons"
+msgstr "Iconen voor delen verbergen/tonen"
+
+#: inc/ansar/customize/theme-options.php:367
+msgid "Featured Image"
+msgstr "Uitgelichte afbeelding"
+
+#: inc/ansar/customize/theme-options.php:335
+msgid "Single Post"
+msgstr "Enkelvoudig bericht"
+
+#: inc/ansar/customize/theme-options.php:316
+msgid "Numbers"
+msgstr "Nummers"
+
+#: inc/ansar/customize/theme-options.php:315
+msgid "Next-Prev"
+msgstr "Volgende/vorige"
+
+#: inc/ansar/customize/theme-options.php:304
+msgid "Pagination"
+msgstr "Paginering"
+
+#: inc/ansar/customize/theme-options.php:295
+msgid "Full Content"
+msgstr "Volledige inhoud"
+
+#: inc/ansar/customize/theme-options.php:294
+msgid "Excerpt"
+msgstr "Samenvatting"
+
+#: inc/ansar/customize/theme-options.php:283
+msgid "Choose Content Option"
+msgstr "Kies inhoud optie"
+
+#: inc/ansar/customize/theme-options.php:274
+#: inc/ansar/customize/theme-options.php:408 inc/ansar/template-tags.php:139
+msgid "Comments"
+msgstr "Reacties"
+
+#: inc/ansar/customize/theme-options.php:272
+#: inc/ansar/customize/theme-options.php:406
+#: inc/ansar/customize/theme-options.php:419
+msgid "Author"
+msgstr "Auteur"
+
+#: inc/ansar/customize/theme-options.php:247
+#: inc/ansar/customize/theme-options.php:257
+#: inc/ansar/customize/theme-options.php:356
+#: inc/ansar/customize/theme-options.php:389
+msgid "Post Meta"
+msgstr "Bericht meta"
+
+#: inc/ansar/customize/theme-options.php:236
+#: inc/ansar/customize/theme-options.php:345
+#: inc/ansar/customize/theme-options.php:469
+msgid "Category"
+msgstr "Categorie"
+
+#: inc/ansar/customize/theme-options.php:224
+msgid "Drop Caps (First Big Letter)"
+msgstr "Initiaal (Eerste grote letter)"
+
+#: inc/ansar/customize/theme-options.php:214
+msgid "Blog Post"
+msgstr "Blogbericht"
+
+#: inc/ansar/customize/theme-options.php:204
+msgid "Blog Page"
+msgstr "Blog pagina"
+
+#: 404.php:13 inc/ansar/customize/theme-options.php:195
+msgid "Go Back"
+msgstr "Ga terug"
+
+#: inc/ansar/customize/theme-options.php:194
+msgid "Button Title"
+msgstr "Knop titel"
+
+#: 404.php:24 inc/ansar/customize/theme-options.php:184
+msgid "We are sorry, but the page you are looking for does not exist."
+msgstr "Het spijt ons, maar de pagina die u zoekt bestaat niet."
+
+#: inc/ansar/customize/theme-options.php:183
+#: inc/ansar/widgets/widget-author-info.php:175
+msgid "Description"
+msgstr "Beschrijving"
+
+#: 404.php:23 inc/ansar/customize/theme-options.php:173
+msgid "Oops! Page not found"
+msgstr "Pagina niet gevonden"
+
+#: inc/ansar/customize/theme-options.php:162
+msgid "404 Page"
+msgstr "404 pagina"
+
+#: inc/ansar/customize/theme-options.php:153
+msgid "Auto Height Post Image"
+msgstr "Automatische hoogte bericht afbeelding"
+
+#: inc/ansar/customize/theme-options.php:152
+msgid "Fix Height Post Image"
+msgstr "Vaste hoogte bericht afbeelding"
+
+#: inc/ansar/customize/theme-options.php:148
+msgid "Post Image display type:"
+msgstr "Bericht afbeelding weergavetype:"
+
+#: inc/ansar/customize/theme-options.php:137
+msgid "Post Image"
+msgstr "Bericht afbeelding"
+
+#: inc/ansar/customize/theme-options.php:116
+msgid "Social"
+msgstr "Sociaal"
+
+#: inc/ansar/customize/theme-options.php:115
+msgid "Add New Social"
+msgstr "Nieuw sociaal netwerk toevoegen"
+
+#: inc/ansar/customize/theme-options.php:92
+msgid "Hide/Show on Footer"
+msgstr "Verberg/toon footer"
+
+#: inc/ansar/customize/theme-options.php:80
+msgid "Hide/Show on Header"
+msgstr "Verberg/toon op header"
+
+#: inc/ansar/customize/theme-options.php:70
+#: inc/ansar/customize/theme-options.php:112
+msgid "Social Icons"
+msgstr "Sociale iconen"
+
+#: inc/ansar/customize/theme-options.php:61
+msgid "Rank Math"
+msgstr "Rank Math"
+
+#: inc/ansar/customize/theme-options.php:60
+msgid "Yoast SEO"
+msgstr "Yoast SEO"
+
+#: inc/ansar/customize/theme-options.php:59
+msgid "NavXT"
+msgstr "NavXT"
+
+#: inc/ansar/customize/theme-options.php:58
+msgid "Default"
+msgstr "Standaard"
+
+#: inc/ansar/customize/theme-options.php:56
+msgid "If you use other than \"default\" one you will need to install and activate respective plugins Breadcrumb NavXT, Yoast SEO and Rank Math SEO"
+msgstr "Als u een andere dan de \"standaard\" gebruikt, moet u de respectievelijke plugins kruimelpad, NavXT, Yoast SEO en Rank Math SEO installeren en activeren"
+
+#: inc/ansar/customize/theme-options.php:53
+msgid "Breadcrumb Type"
+msgstr "Type kruimelpad"
+
+#: inc/ansar/customize/theme-options.php:31
+msgid "Breadcrumb"
+msgstr "Kruimelpad"
+
+#: inc/ansar/customize/theme-options.php:22
+msgid "Theme Options"
+msgstr "Thema opties"
+
+#: inc/ansar/customize/theme-layout.php:118
+#: inc/ansar/customize/theme-layout.php:127
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/ansar/customize/theme-layout.php:94
+msgid "Pages"
+msgstr "Pagina's"
+
+#: inc/ansar/customize/theme-layout.php:70
+#: inc/ansar/customize/theme-options.php:326
+msgid "Single Page"
+msgstr "Enkelvoudige pagina"
+
+#: inc/ansar/customize/theme-layout.php:40
+msgid "Sidebar Width"
+msgstr "Breedte zijbalk"
+
+#: inc/ansar/customize/theme-layout.php:30
+msgid "Archive Pages"
+msgstr "Archief pagina's"
+
+#: inc/ansar/customize/theme-layout.php:21
+msgid "Sidebar"
+msgstr "Zijbalk"
+
+#: inc/ansar/customize/theme-layout.php:12
+msgid "Theme Layout"
+msgstr "Thema lay-out"
+
+#: inc/ansar/customize/header-options.php:529
+#: inc/ansar/customize/header-options.php:538
+msgid "Sticky Header"
+msgstr "Sticky header"
+
+#: inc/ansar/customize/header-options.php:479
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:452
+msgid "Icon"
+msgstr "Icoon"
+
+#: inc/ansar/customize/header-options.php:459
+#: inc/ansar/customize/header-options.php:496
+msgid "Subscribe"
+msgstr "Abonneren"
+
+#: inc/ansar/customize/header-options.php:437
+msgid "Shopping Cart"
+msgstr "Winkelwagen"
+
+#: inc/ansar/customize/header-options.php:425
+msgid "Dark/Light Icon"
+msgstr "Donker/licht icoon"
+
+#: inc/ansar/customize/header-options.php:415
+msgid "Search Icon"
+msgstr "Zoek icoon"
+
+#: inc/ansar/customize/header-options.php:405
+msgid "Header Toggle Icon"
+msgstr "Selecteer toggle icoon"
+
+#: inc/ansar/customize/header-options.php:386
+#: inc/ansar/customize/header-options.php:395
+msgid "Menu"
+msgstr "Menu"
+
+#: inc/ansar/customize/header-options.php:374
+#: inc/ansar/customize/header-options.php:518
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:441
+msgid "Open link in a new tab"
+msgstr "Open link in een nieuwe tab"
+
+#: inc/ansar/customize/header-options.php:362
+#: inc/ansar/customize/header-options.php:506
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:283
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:384
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:489
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:511
+msgid "Link"
+msgstr "Link"
+
+#: inc/ansar/customize/header-options.php:336
+#: inc/ansar/customize/header-options.php:346
+msgid "Banner Advertisement"
+msgstr "Banner advertentie"
+
+#: inc/ansar/customize/header-options.php:279
+msgid "Remove Overlay Color"
+msgstr "Overlay kleur verwijderen"
+
+#: inc/ansar/customize/header-options.php:269
+msgid "Header Image"
+msgstr "Kopafbeelding"
+
+#: inc/ansar/customize/header-options.php:247
+#: inc/ansar/customize/theme-options.php:593
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:351
+msgid "Color"
+msgstr "Kleur"
+
+#: inc/ansar/customize/header-options.php:228
+msgid "From WordPress Setting"
+msgstr "Van WordPress instellingen"
+
+#: inc/ansar/customize/header-options.php:227
+msgid "Theme Default Setting"
+msgstr "Thema standaardinstelling"
+
+#: inc/ansar/customize/header-options.php:223
+msgid "Date Display Type:"
+msgstr "Type datumweergave:"
+
+#: inc/ansar/customize/header-options.php:203
+#: inc/ansar/customize/theme-options.php:273
+#: inc/ansar/customize/theme-options.php:407
+#: inc/ansar/customize/theme-options.php:491
+msgid "Date"
+msgstr "Datum"
+
+#: inc/ansar/customize/header-options.php:179
+#: inc/ansar/customize/header-options.php:213
+msgid "Hide / Show"
+msgstr "Verbergen/tonen"
+
+#: inc/ansar/customize/header-options.php:127
+#: inc/ansar/customize/header-options.php:238
+msgid "Top Bar"
+msgstr "Bovenbalk"
+
+#: inc/ansar/customize/header-options.php:117
+msgid "Header Option"
+msgstr "Header optie"
+
+#: inc/ansar/customize/header-options.php:107
+msgid "Display Center Site Title and Tagline"
+msgstr "Toon site titel en slogan in het midden"
+
+#: inc/ansar/customize/header-options.php:76
+msgid "Site Title Size"
+msgstr "Site titelgrootte"
+
+#: inc/ansar/customize/header-options.php:69
+msgid "Display site title"
+msgstr "Toon site titel"
+
+#: inc/ansar/customize/header-options.php:62
+msgid "Site Title & Tagline"
+msgstr "Titel van de site & slogan"
+
+#: inc/ansar/customize/header-options.php:32
+msgid "Logo Width"
+msgstr "Logo breedte"
+
+#: inc/ansar/customize/header-options.php:23
+msgid "Logo & Site Icon"
+msgstr "Logo & site icoon"
+
+#: inc/ansar/customize/header-options.php:14
+msgid "Site Identity"
+msgstr "Site identiteit"
+
+#: inc/ansar/customize/frontpage-options.php:197
+msgid "Trending/Editor Post Section"
+msgstr "Sectie trending/editor bericht"
+
+#: inc/ansar/customize/frontpage-options.php:186
+msgid "Hide/Show Meta"
+msgstr "Meta verbergen/tonen"
+
+#: inc/ansar/customize/frontpage-options.php:155
+#: inc/ansar/customize/frontpage-options.php:207
+msgid "Title Font Size"
+msgstr "Titel lettertype grootte"
+
+#: inc/ansar/customize/frontpage-options.php:141
+msgid "Posts to be shown on editor slider section"
+msgstr "Berichten om te tonen in de banner slider sectie"
+
+#: inc/ansar/customize/frontpage-options.php:129
+msgid "Editor Post Section"
+msgstr "Editor bericht sectie"
+
+#: inc/ansar/customize/frontpage-options.php:115
+msgid "Posts to be shown on trending slider section"
+msgstr "Berichten om te tonen in de trending slider sectie"
+
+#: inc/ansar/customize/frontpage-options.php:103
+msgid "Trending Post Section"
+msgstr "Trending bericht sectie"
+
+#: inc/ansar/customize/frontpage-options.php:90
+msgid "Posts to be shown on banner slider section"
+msgstr "Berichten om te tonen in de banner slider sectie"
+
+#: inc/ansar/customize/frontpage-options.php:89
+#: inc/ansar/customize/frontpage-options.php:114
+#: inc/ansar/customize/frontpage-options.php:140
+#: inc/ansar/widgets/widget-featured-post-widget.php:116
+#: inc/ansar/widgets/widget-latest-news.php:118
+#: inc/ansar/widgets/widgets-common-functions.php:24
+msgid "Select Category"
+msgstr "Selecteer categorie"
+
+#: inc/ansar/customize/header-options.php:347
+msgid "Recommended Size %1$s px X %2$s px"
+msgstr "Aanbevolen grootte %1$s px X %2$s px"
+
+#: inc/ansar/customize/frontpage-options.php:78
+msgid "Background image"
+msgstr "Achtergrond afbeelding"
+
+#: inc/ansar/customize/frontpage-options.php:13
+#: inc/ansar/customize/frontpage-options.php:58
+msgid "Featured Slider"
+msgstr "Uitgelichte slider"
+
+#: inc/ansar/customize/footer-options.php:221
+#: inc/ansar/customize/footer-options.php:242
+msgid "Copyright"
+msgstr "Copyright"
+
+#: inc/ansar/customize/footer-options.php:204
+msgid "Select Column Layout"
+msgstr "Selecteer kolom lay-out"
+
+#: inc/ansar/customize/footer-options.php:191
+#: inc/ansar/customize/footer-options.php:264
+msgid "Text Color"
+msgstr "Tekstkleur"
+
+#: inc/ansar/customize/footer-options.php:179
+msgid "Overlay Color"
+msgstr "Overlay kleur"
+
+#: inc/ansar/customize/footer-options.php:164
+msgid "Background Image"
+msgstr "Achtergrond afbeelding"
+
+#: inc/ansar/customize/footer-options.php:154
+msgid "Content"
+msgstr "Inhoud"
+
+#: inc/ansar/customize/footer-options.php:123
+#: inc/ansar/customize/header-options.php:305
+msgid "Height"
+msgstr "Hoogte"
+
+#: inc/ansar/customize/footer-options.php:93
+msgid "Width"
+msgstr "Breedte"
+
+#: inc/ansar/customize/footer-options.php:83
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/ansar/customize/footer-options.php:73
+msgid "Footer"
+msgstr "Footer"
+
+#: inc/ansar/customize/footer-options.php:62
+#: inc/ansar/customize/header-options.php:191
+#: inc/ansar/customize/header-options.php:494
+#: inc/ansar/customize/theme-options.php:172
+#: inc/ansar/customize/theme-options.php:457
+#: inc/ansar/customizer-repeater/class/customizer-repeater-control.php:359
+#: inc/ansar/widgets/popular_tab_widget.php:96
+#: inc/ansar/widgets/popular_tab_widget.php:99
+#: inc/ansar/widgets/popular_tab_widget.php:106
+#: inc/ansar/widgets/widget-3-column-slider.php:104
+#: inc/ansar/widgets/widget-author-info.php:143
+#: inc/ansar/widgets/widget-posts-carousel.php:117
+#: inc/ansar/widgets/widget-posts-list.php:120
+#: inc/ansar/widgets/widget-posts-slider.php:110
+msgid "Title"
+msgstr "Titel"
+
+#: inc/ansar/customize/footer-options.php:51
+#: inc/ansar/customize/footer-options.php:231
+#: inc/ansar/customize/frontpage-options.php:67
+#: inc/ansar/customize/header-options.php:446
+#: inc/ansar/customize/header-options.php:468
+#: inc/ansar/customize/theme-options.php:42
+#: inc/ansar/customize/theme-options.php:427
+#: inc/ansar/customize/theme-options.php:446
+#: inc/ansar/customize/theme-options.php:510
+#: inc/ansar/customize/theme-options.php:685
+msgid "Hide/Show"
+msgstr "Verberg/toon"
+
+#: inc/ansar/customize/customizer-default.php:74
+msgid "Copyright &copy; All rights reserved"
+msgstr "Copyright © alle rechten voorbehouden"
+
+#: inc/ansar/customize/customizer-default.php:69
+#: inc/ansar/customize/footer-options.php:31
+#: inc/ansar/customize/footer-options.php:41
+msgid "You Missed"
+msgstr "U miste"
+
+#: inc/ansar/customize/customizer-default.php:23
+#: inc/ansar/customize/header-options.php:169
+msgid "Breaking"
+msgstr "Breaking"
+
+#: inc/ansar/customize/customizer-control.php:127
+msgid "All"
+msgstr "Alle"
+
+#: inc/ansar/customize/customize-core.php:24
+#: inc/ansar/customize/customize-core.php:35
+#: inc/ansar/customize/footer-options.php:253
+#: inc/ansar/customize/header-options.php:258
+#: inc/ansar/customize/header-options.php:289
+msgid "Background Color"
+msgstr "Achtergrondkleur"
+
+#: inc/ansar/customize/customize-core.php:14
+msgid "Background Settings"
+msgstr "Achtergrondinstellingen"
+
+#: inc/ansar/customize-pro/class-customize.php:75
+msgid "Get Support"
+msgstr "Krijg ondersteuning"
+
+#: inc/ansar/customize-pro/class-customize.php:64
+msgid "UPGRADE TO PRO"
+msgstr "NAAR PRO UPGRADEN"
+
+#: inc/ansar/custom-navwalker-class.php:207
+msgid "Add a menu"
+msgstr "Menu toevoegen"
+
+#: inc/ansar/custom-control/custom_tab_control/custom_tab_control_class.php:40
+msgid "Style"
+msgstr "Stijl"
+
+#: inc/ansar/custom-control/custom_tab_control/custom_tab_control_class.php:38
+msgid "General"
+msgstr "Algemeen"
+
+#: inc/ansar/custom-control/customize_layout.php:35
+msgid "Disable"
+msgstr "Uitschakelen"
+
+#: inc/ansar/custom-control/customize_layout.php:28
+msgid "Enable"
+msgstr "Inschakelen"
+
+#: inc/ansar/core/class-newspaperup-theme-setup.php:272
+msgid "Footer Widget Area"
+msgstr "Footer widget gebied"
+
+#: inc/ansar/core/class-newspaperup-theme-setup.php:262
+msgid "Frontpage Right Content"
+msgstr "Voorpagina rechter inhoud"
+
+#: inc/ansar/core/class-newspaperup-theme-setup.php:252
+msgid "Frontpage Content"
+msgstr "Inhoud voorpagina"
+
+#: inc/ansar/core/class-newspaperup-theme-setup.php:242
+msgid "Frontpage Left Content"
+msgstr "Inhoud voorpagina"
+
+#: inc/ansar/core/class-newspaperup-theme-setup.php:232
+msgid "Sidebar Widget Area"
+msgstr "Zijbalk widget gebied"
+
+#: inc/ansar/core/class-newspaperup-theme-setup.php:222
+msgid "Header Toggle Sidebar"
+msgstr "Header toggle zijbalk"
+
+#: inc/ansar/core/class-newspaperup-theme-setup.php:125
+msgid "Footer Menu"
+msgstr "Footer menu"
+
+#: inc/ansar/core/class-newspaperup-theme-setup.php:124
+msgid "Primary Menu"
+msgstr "Primair menu"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:840
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr "W"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:812
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:1239
+msgctxt "daily archives date format"
+msgid "j"
+msgstr "j"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:811
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:867
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:1234
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr "F"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:810
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:839
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:866
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:893
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:1228
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:794
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr "g a"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:777
+msgctxt "minute archives time format"
+msgid "i"
+msgstr "i"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:760
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr "g:i a"
+
+#. Translators: Weekly archive title. %s is the week date format.
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:308
+msgid "Week %s"
+msgstr "Week %s"
+
+#. Translators: Minute archive title. %s is the minute time format.
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:306
+msgid "Minute %s"
+msgstr "Minuut %s"
+
+#. Translators: %s is the page number.
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:304
+msgid "Comment Page %s"
+msgstr "Reactiepagina %s"
+
+#. Translators: %s is the page number.
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:302
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#. Translators: %s is the search query.
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:300
+msgid "Search results for: %s"
+msgstr "Zoekresultaten voor: %s"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:298
+msgid "Archives"
+msgstr "Archieven"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:297
+msgid "404 Not Found"
+msgstr "404 niet gevonden"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:296 index-banner.php:16
+#: index-banner.php:21
+msgid "Home"
+msgstr "Home"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:295
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr "Kruimelpaden"
+
+#: inc/ansar/breadcrumb-trail/breadcrumbs.php:294
+msgid "Browse:"
+msgstr "Bladeren:"
+
+#: header.php:29
+msgid "Skip to content"
+msgstr "Ga naar de inhoud"
+
+#: footer.php:81
+msgid "%1$s by %2$s."
+msgstr "%1$s door %2$s."
+
+#: comments.php:82
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#: comments.php:52 comments.php:72
+msgid "Newer Comments"
+msgstr "Nieuwere reacties"
+
+#: comments.php:51 comments.php:71
+msgid "Older Comments"
+msgstr "Oudere reacties"
+
+#: comments.php:49 comments.php:68
+msgid "Comment navigation"
+msgstr "Reactie navigatie"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:31
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s gedachte over &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s gedachten over &ldquo;%2$s&rdquo;"
+
+#. translators: %s: post title
+#: comments.php:26
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Eén gedachte over &ldquo;%s&rdquo;"
+
+#: 404.php:21
+msgid "4"
+msgstr "4"
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://themeansar.com/free-themes/newspaperup-free-magazine-blog-wordpress-theme/"
+msgstr "https://themeansar.com/free-themes/newspaperup-free-magazine-blog-wordpress-theme/"
+
+#. Author URI of the theme
+#: style.css
+msgid "http://themeansar.com"
+msgstr "http://themeansar.com"
+
+#. Author of the theme
+#: style.css
+msgid "Themeansar"
+msgstr "Themeansar"
