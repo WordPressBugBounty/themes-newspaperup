@@ -457,11 +457,16 @@ li#accordion-panel-Theme_colors_panel {
 }
 .newspaperup-notice-link{ 
   display:inline;
-  color: #2271b1;
+  color: var(--wp-admin-theme-color);
 }
 .admin-bar .newspaperup-btn-get-started, .admin-bar .newspaperup-btn-get-started-customize{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
+}
+
+.admin-bar .newspaperup-notice-buttons :is( .newspaperup-btn-get-started, .newspaperup-btn-get-started-customize) .dashicons {
+    line-height: 1.2;
+    color: inherit !important;
 }
