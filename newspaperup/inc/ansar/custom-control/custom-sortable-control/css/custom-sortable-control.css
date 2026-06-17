@@ -188,8 +188,8 @@
 }
 
 .customize-control-newspaperup-sortable li:not(.invisible) .switch-wrap > .switch {
-    background-color: #4296f4;
-    border-color: #0377B5;
+    background-color: var(--wp-admin-theme-color);
+    border-color: var(--wp-admin-theme-color);
 }
 
 .customize-control-newspaperup-sortable li:not(.invisible) .switch-wrap > .switch:before {
