@@ -75,9 +75,6 @@ if ( ! class_exists( 'Newspaperup_Customizer_Control' ) ) {
 					case 'radio-image':
 						$wp_customize->add_control( new Newspaperup_Custom_Radio_Default_Image_Control( $wp_customize, $field_id, $args ) );
 						break;
-					case 'layout':
-						$wp_customize->add_control( new Newspaperup_layout_Customize_Control( $wp_customize, $field_id, $args ) );
-						break;
 					case 'taxonomies':
 						$wp_customize->add_control( new Newspaperup_Dropdown_Taxonomies_Control( $wp_customize, $field_id, $args ) );
 						break;
