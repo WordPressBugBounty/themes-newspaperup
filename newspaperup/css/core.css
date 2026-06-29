@@ -3030,7 +3030,7 @@ footer.one .bs-footer-copyright {
   margin-bottom: 1.5rem;
   border: 1px solid rgba(225, 225, 225, 0.9);
   position: relative;
-  padding: 2rem 2.5rem 2.5rem 7.5rem;
+  padding: 2rem 2.5rem 2rem 7.5rem;
   min-height: 10rem;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -3051,7 +3051,6 @@ footer.one .bs-footer-copyright {
   position: absolute;
   z-index: 0;
   left: 28px;
-  top: 28px;
   width: 60px;
   height: 60px;
 }

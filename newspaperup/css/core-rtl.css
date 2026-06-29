@@ -29,7 +29,7 @@ body {
   font-weight: 500;
   line-height: 1.4;
   font-display: swap;
-  text-align: right;
+  text-align: end;
   direction: rtl;
   font-size: 16px;
 }
@@ -72,7 +72,7 @@ select {
   height: 55px;
   transition: all 0.8s;
   margin-bottom: 20px;
-  text-align: right;
+  text-align: end;
 }
 .wpcf7-submit.has-spinner{
 	float: right;
@@ -844,7 +844,7 @@ html {
   letter-spacing: -0.03em;
   cursor: pointer;
   transition: all 0.2s ease 0s;
-  text-align: right;
+  text-align: end;
 }
 .navbar-wp nav ul.sm-clean li a:hover {
   transform: scale(0.95);
@@ -2694,6 +2694,9 @@ footer.one .bs-footer-copyright {
 }
 .bs-blog-post.single.head_two .bs-header .bs-info-author-block {
   background: transparent;
+}
+.bs-info-author-block:has(.bs-author-desc) {
+    flex-direction: column;
 }
 .bs-blog-post.single.head_two::after {
   position: absolute;
