@@ -51,11 +51,7 @@
                         <div class="row align-center">
                             <div class="col-lg-6 col-md-6">
                                 <div class="footer-logo text-xs">
-                                    <?php the_custom_logo(); ?>
-                                    <div class="site-branding-text">
-                                        <p class="site-title-footer"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
-                                        <p class="site-description-footer"><?php bloginfo('description'); ?></p>
-                                    </div>
+                                    <?php the_custom_logo(); do_action('newspaperup_action_footer_site_title_tagline'); ?>
                                 </div>
                             </div>
                             <!--col-lg-3-->

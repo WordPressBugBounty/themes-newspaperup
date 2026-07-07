@@ -463,20 +463,8 @@ if (!function_exists('newspaperup_typo_fonts')) {
 
 if ( ! function_exists( 'newspaperup_header_color' ) ) :
 
-    function newspaperup_header_color() { ?>
-        <style type="text/css">
-            <?php if ( ! display_header_text() ) : ?>
+    function newspaperup_header_color() {
 
-                .site-title,
-                .site-description {
-                    position: absolute;
-                    clip: rect(1px, 1px, 1px, 1px);
-                }
-
-            <?php else :
-            endif; ?>
-        </style>
-        <?php
     }
 endif;
 
@@ -489,6 +477,54 @@ function newspaperup_comment_count() {
 } 
  
 add_action('wpb_total_comments','newspaperup_comment_count');
+
+if ( ! function_exists( 'newspaperup_header_site_title_tagline' ) ) :
+    function newspaperup_header_site_title_tagline() {
+        $title   = display_header_text();
+        $tagline = get_theme_mod( 'display_header_tagline', false );
+
+        $hideTitle = ( ! $title  ) ? ' d-none' : '';
+        $hideTagline = ( ! $tagline ) ? ' d-none' : '';
+        ?>    
+        <div class="site-branding-text">
+            <?php if ( is_front_page() || is_home() ) : ?>
+                <h1 class="site-title<?php echo esc_attr( $hideTitle ); ?>">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                        <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+                    </a>
+                </h1>
+            <?php else : ?>
+                <p class="site-title<?php echo esc_attr( $hideTitle ); ?>">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                        <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+                    </a>
+                </p>
+            <?php endif; ?>
+            <p class="site-description<?php echo esc_attr( $hideTagline ); ?>">
+                <?php echo esc_html( get_bloginfo( 'description' ) ); ?>
+            </p>
+        </div>
+        <?php
+    }
+endif;
+add_action('newspaperup_action_header_site_title_tagline','newspaperup_header_site_title_tagline');
+
+if ( ! function_exists( 'newspaperup_footer_site_title_tagline' ) ) :
+    function newspaperup_footer_site_title_tagline() {
+        $title   = display_header_text();
+        $tagline = get_theme_mod( 'display_header_tagline', false );
+    
+        $hideTitle = ( ! $title  ) ? ' d-none' : '';
+        $hideTagline = ( ! $tagline ) ? ' d-none' : '';
+        ?>    
+        <div class="site-branding-text">
+            <p class="site-title-footer<?php echo esc_attr( $hideTitle ); ?>"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo esc_html(get_bloginfo( 'name' )); ?></a></p>
+            <p class="site-description-footer<?php echo esc_attr( $hideTagline ); ?>"><?php echo esc_html(get_bloginfo( 'description' )); ?></p>
+        </div>
+        <?php
+    }
+endif;
+add_action('newspaperup_action_footer_site_title_tagline','newspaperup_footer_site_title_tagline');
 
 //SCROLL TO TOP //
 if ( ! function_exists( 'newspaperup_scrolltoup' ) ) :

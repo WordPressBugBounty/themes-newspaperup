@@ -8,19 +8,12 @@ if (!function_exists('newspaperup_header_logo_section')) :
  */
 function newspaperup_header_logo_section() { ?>
 <!-- logo-->
-<div class="logo">
-  <div class="site-logo">
-    <?php if(get_theme_mod('custom_logo') !== ""){ the_custom_logo(); } ?>
-  </div>
-  <div class="site-branding-text<?php echo esc_attr( display_header_text() ? '' : ' d-none'); ?>">
-  <?php if (is_front_page() || is_home()) { ?>
-    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo esc_html(get_bloginfo( 'name' )); ?></a></h1>
-    <?php } else { ?>
-    <p class="site-title"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo esc_html(get_bloginfo( 'name' )); ?></a></p>
-    <?php } ?>
-    <p class="site-description"><?php  echo esc_html(get_bloginfo( 'description' )); ?></p>
-  </div>
-</div><!-- /logo-->
+  <div class="logo">
+    <div class="site-logo">
+      <?php if(get_theme_mod('custom_logo') !== ""){ the_custom_logo(); } ?>
+    </div>
+    <?php do_action('newspaperup_action_header_site_title_tagline'); ?>
+  </div><!-- /logo-->
 <?php  }
 endif;
 add_action('newspaperup_action_header_logo_section', 'newspaperup_header_logo_section', 4);

@@ -35,19 +35,12 @@
 		}
 		value.bind( function( to ) {
 			if ( 'blank' === to ) {
-				$( 'header .site-title a,header .site-description' ).css( {
-					'clip': 'rect(1px, 1px, 1px, 1px)',
-					'position': 'absolute'
-				} );
-				$( 'header .site-branding-text ' ).addClass('d-none');
+				$('.site-title').addClass('d-none');
+				$('.site-title-footer').addClass('d-none');
 				myCustomizer.control('site_title_font_size').container.hide();
 			} else {
-				$('header .site-title').css('position', 'unset');
-				$( 'header .site-title a,header .site-description' ).css( {
-					'clip': 'auto',
-					'position': 'relative'
-				} );
-				$( 'header .site-branding-text ' ).removeClass('d-none');
+				$('.site-title').removeClass('d-none');
+				$('.site-title-footer').removeClass('d-none');
 				$( 'header .site-title a, header .site-description' ).css( {
 					'color': to
 				} );
@@ -56,6 +49,24 @@
 		} );
 	} );
 
+	wp.customize( 'display_header_tagline', function( value ) {
+		if ( ! value() ) {
+			$('.site-description').addClass('d-none');
+			$('.site-description-footer').addClass('d-none');
+		} else {
+			$('.site-description').removeClass('d-none');
+			$('.site-description-footer').removeClass('d-none');
+		}
+		value.bind( function( to ) {
+			if ( ! to ) {
+				$('.site-description').addClass('d-none');
+				$('.site-description-footer').addClass('d-none');
+			} else {
+				$('.site-description').removeClass('d-none');
+				$('.site-description-footer').removeClass('d-none');
+			}
+		} );
+	} );
 	// Footer Background Image.
 	wp.customize( 'newspaperup_footer_bg_img', function( value ) {
 		value.bind( function( newVal ) {

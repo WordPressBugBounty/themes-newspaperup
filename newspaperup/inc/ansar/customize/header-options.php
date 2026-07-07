@@ -66,7 +66,7 @@ Newspaperup_Customizer_Control::add_section(
 
 $wp_customize->get_control( 'blogname' )->section = 'newspaperup_site_title_section';
 $wp_customize->get_control( 'display_header_text' )->section = 'newspaperup_site_title_section';
-$wp_customize->get_control( 'display_header_text' )->label = esc_html__( 'Display site title', 'newspaperup' );
+$wp_customize->get_control( 'display_header_text' )->label = esc_html__( 'Display Site Title', 'newspaperup' );
 $wp_customize->get_control( 'blogdescription' )->section = 'newspaperup_site_title_section';
 
 Newspaperup_Customizer_Control::add_field( 
@@ -99,6 +99,19 @@ Newspaperup_Customizer_Control::add_field(
         ),
     ),
 );
+
+Newspaperup_Customizer_Control::add_field( 
+    array(
+        'type'              => 'checkbox', 
+        'settings'          => 'display_header_tagline',
+        'label'             => esc_html__('Display Tagline', 'newspaperup'),
+        'section'           => 'newspaperup_site_title_section',
+        'transport'         => 'postMessage',
+        'priority'          => 100,
+        'default'           => false,
+        'sanitize_callback' => 'newspaperup_sanitize_checkbox',
+    )
+);
 // Enable/Disable header image overlay color
 Newspaperup_Customizer_Control::add_field( 
     array(
@@ -106,6 +119,7 @@ Newspaperup_Customizer_Control::add_field(
         'settings'  => 'header_text_center',
         'label' => esc_html__('Display Center Site Title and Tagline', 'newspaperup'),
         'section'  => 'newspaperup_site_title_section',
+        'priority'          => 100,
         'default' => false,
         'sanitize_callback' => 'newspaperup_sanitize_checkbox',
     )
