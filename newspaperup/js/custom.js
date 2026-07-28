@@ -129,36 +129,75 @@
   /*---------------------------------------
     Off Canvas           
   -----------------------------------------*/
-  let clickableAddElementRight = document.querySelector('[bs-data-clickable-end]');
+  let clickableAddElementRight = document.querySelectorAll('[bs-data-clickable-end]');
   let clickableRemoveElement = document.querySelector('[bs-data-removable]');
   let clickableRemoveElementTwo = document.querySelector('[bs-remove-overlay]');
   let targetElement = document.querySelector('[bs-data-targeted]'); 
   let targetBody = document.querySelector('body'); 
 
   // Function to handle the click event
-  function handleClickRight() { 
+  function handleClickRight() {
     targetElement.classList.add('from-right'); 
     clickableRemoveElementTwo.classList.add('show'); 
     targetBody.style.overflow = 'hidden';
     targetBody.style.paddingRight = '17px';
-    clickableRemoveElement.focus();
+    if (clickableRemoveElement) {
+      clickableRemoveElement.focus();
+    }
   }
+  
   function handleClickRemove(event) {
     event.preventDefault();
     targetElement.classList.remove('from-right');
     clickableRemoveElementTwo.classList.remove('show'); 
     targetBody.style.overflow = null;
     targetBody.style.paddingRight = null;
-    clickableAddElementRight.focus();
+    if (clickableAddElementRight.length > 0) {
+      clickableAddElementRight[0].focus();
+    }
   }
 
   // Attach the handleClick function to the click event of the clickable element
   if( (clickableAddElementRight !== null) && (clickableAddElementRight !== undefined)) {
-    clickableAddElementRight.addEventListener('click', handleClickRight);
+    clickableAddElementRight.forEach(function(element) {
+      element.addEventListener('click', handleClickRight);
+    });
   }
-  clickableRemoveElement.addEventListener('click', handleClickRemove);
-  clickableRemoveElementTwo.addEventListener('click', handleClickRemove);
 
+  // Safety checks for the removal elements
+  if (clickableRemoveElement) {
+    clickableRemoveElement.addEventListener('click', handleClickRemove);
+  }
+  if (clickableRemoveElementTwo) {
+    clickableRemoveElementTwo.addEventListener('click', handleClickRemove);
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && targetElement.classList.contains('from-right')) {
+      handleClickRemove(e);
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+
+    if (e.key === 'Tab' && targetElement.classList.contains('from-right')) {
+
+      const firstElement = document.querySelector('[bs-data-removable]');
+      const lastElement = document.querySelector('.empty-sidebar-widget-text a');
+      // const lastElement = document.querySelector('[bs-data-last]');
+
+      if (!firstElement || !lastElement) return;
+
+      if (document.activeElement === lastElement && !e.shiftKey) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+
+      if (document.activeElement === firstElement && e.shiftKey) {
+        e.preventDefault();
+        lastElement.focus();
+      }
+    }
+  });
 
   /* =================================
   ===        Featured Tabs  ====
@@ -187,33 +226,75 @@
   /*---------------------------------------
     Search           
   -----------------------------------------*/
-  let clickAddElementSearch = document.querySelector('[bs-search-clickable]');
-  let targetSerachElement = document.querySelector('[bs-search-targeted]'); 
-  let targetHideSerach = document.querySelector('[bs-dismiss-search]'); 
-
+  let clickAddElementSearch = document.querySelectorAll('[bs-search-clickable]');
+  let targetSearchElement = document.querySelector('[bs-search-targeted]'); 
+  let targetHideSearch = document.querySelector('[bs-dismiss-search]'); 
+ 
   // Function to handle the click event
   function openSearch(event) {
-    // Scroll to top logic
     event.preventDefault();
     clickableRemoveElementTwo.classList.add('show');
-    targetSerachElement.classList.add('show-search');
+    targetSearchElement.classList.add('show-search');
     targetBody.style.overflow = 'hidden'; 
     targetBody.style.paddingRight = '17px';
-    document.querySelector('.search-popup-content form .search-field').focus();
+    setTimeout(function () {
+      const closeBtn = targetSearchElement.querySelector('[bs-dismiss-search]');
+      if (closeBtn) {
+        closeBtn.focus();
+      }
+    }, 10);
   }
   function hideSearch() {
     clickableRemoveElementTwo.classList.remove('show'); 
-    targetSerachElement.classList.remove('show-search');
+    targetSearchElement.classList.remove('show-search');
     targetBody.style.overflow = null;
     targetBody.style.paddingRight = null;
-    clickAddElementSearch.focus();
+    if (clickAddElementSearch.length > 0) {
+      clickAddElementSearch[0].focus();
+    }
   }
   if(clickAddElementSearch){
-    clickAddElementSearch.addEventListener('click', openSearch);
+    clickAddElementSearch.forEach(function(element) {
+      element.addEventListener('click', openSearch);
+    });
   }
   // clickableRemoveElementTwo.addEventListener('click', hideSearch);
-  targetHideSerach.addEventListener('click', hideSearch);
+  targetHideSearch.addEventListener('click', hideSearch);
 
+  clickAddElementSearch.forEach(function(element) {
+    element.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        openSearch(e);
+      }
+    });
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && targetSearchElement.classList.contains('show-search')) {
+      hideSearch();
+    }
+  });
+  document.addEventListener('keydown', function(e) {  
+
+    if (e.key !== 'Tab') return;
+    if (!targetSearchElement.classList.contains('show-search')) return;
+
+    const firstElement = targetSearchElement.querySelector('[bs-dismiss-search]');
+    const lastElement = targetSearchElement.querySelector('.search-popup-content .search-form .search-submit');
+
+    if (!firstElement || !lastElement) return;
+
+    if (document.activeElement === lastElement && !e.shiftKey) {
+      e.preventDefault();
+      firstElement.focus();
+    }
+    if (document.activeElement === firstElement && e.shiftKey) {
+      e.preventDefault();
+      lastElement.focus();
+    }
+
+  });
 
   $(document).ready(function(){
     $(".menu-btn").click(function() {
@@ -266,62 +347,6 @@
 
   // Check window size on resize
   window.addEventListener('resize', checkWindowSize);
-
-  function applyTabNavigation(selector) {
-		$(document).ready(function() {
-			$(selector).each(function() {
-				var $capture = $(this);
-
-				$capture
-				.attr('tabindex', '-1')
-				.focus()
-				.keydown(function handleKeydown(event) {
-					if (event.key.toLowerCase() !== 'tab') {
-						return;
-					}
-					var tabbable = $()
-					.add($capture.find('button, input, select, textarea'))
-					.add($capture.find('[href]'))
-					.add($capture.find('[tabindex]:not([tabindex="-1"])'));
-
-					var $target = $(event.target);
-
-					if (tabbable.length === 0) {
-						return;
-					}
-					var firstTabbable = tabbable.first();
-					var lastTabbable = tabbable.last();
-					if (event.shiftKey) { 
-						if ($target.is(firstTabbable)) {
-							event.preventDefault();
-							lastTabbable.focus();
-						}
-					} else { 
-						if ($target.is(lastTabbable)) {
-							event.preventDefault();
-							firstTabbable.focus();
-						}
-					}
-				});
-
-				// Ensure focus starts within the container when it's focused
-				$capture.on('focus', function() {
-					var tabbable = $()
-					.add($capture.find('button, input, select, textarea'))
-					.add($capture.find('[href]'))
-					.add($capture.find('[tabindex]:not([tabindex="-1"])'));
-
-					if (tabbable.length > 0) {
-						tabbable.first().focus();
-					}
-				});
-			});
-		});
-  }
-
-  // Apply to multiple selectors
-  applyTabNavigation('.search-popup');
-  applyTabNavigation('.bs-offcanvas.end');
     
   document.addEventListener('DOMContentLoaded', function() {
     var pageTitle = document.querySelector('.bs-card-box.page-entry-title + .row .page-title');

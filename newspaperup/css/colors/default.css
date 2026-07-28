@@ -237,6 +237,11 @@ a:focus, button:focus {
 .search-popup.show-search .search-popup-content {
 	background: var(--wrap-color);
 }
+.search-popup .btn-close:focus {
+    background-color: #0d1221;
+    border-color: #0d1221;
+    outline-color: transparent;
+}
 /*==================== Body & Global ====================*/
 body {
 	color: var(--text-color);

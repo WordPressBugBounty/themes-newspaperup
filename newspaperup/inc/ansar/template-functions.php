@@ -567,7 +567,7 @@ if ( ! function_exists( 'newspaperup_search_popup' ) ) :
         <div class="search-popup" bs-search-targeted="true">
             <div class="search-popup-content">
                 <div class="search-popup-close">
-                    <button type="button" class="btn-close" bs-dismiss-search="true"><i class="fa-solid fa-xmark"></i></button>
+                    <button type="button" class="btn-close" bs-dismiss-search="true" aria-label="<?php echo esc_html( 'Close search', 'newspaperup')?>"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div class="search-inner">
                     <?php get_search_form(); ?>
