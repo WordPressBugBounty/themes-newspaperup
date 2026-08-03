@@ -50,7 +50,10 @@ final class Newspaperup {
 		} 
 		if ( ! defined( 'NEWSPAPERUP_THEME_NAME' ) ) {
 			define( 'NEWSPAPERUP_THEME_NAME'   , $newspaperup_theme->get( 'Name' ) );
-		} 
+		}
+		if ( ! defined( 'NEWSPAPERUP_THEMEURI' ) ) {
+			define( 'NEWSPAPERUP_THEMEURI', $newspaperup_theme->get( 'ThemeURI' ) );
+		}
 	}
 	/**
 	 * Include files.
