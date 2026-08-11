@@ -4589,6 +4589,71 @@ footer {
 footer .bs-footer-widget-area .row {
   row-gap: 1.5rem;
 }
+footer .bs-footer-widget-area .widget_post-author-widget {
+  padding: 0px;
+  font-weight: 500;
+  transition: all 0.5s;
+  text-align: center;
+}
+footer .bs-footer-widget-area .widget_post-author-widget ul.bs-social {
+  gap: 8px;
+  padding: 0;
+  justify-content: center;
+  flex-direction: row;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author .inner {
+  flex-direction: column;
+  gap: 15px;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author .inner .bs-author-info {
+  margin-bottom: 10px;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author::before {
+  content: unset;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author .bs-author-img {
+  border-radius: 100%;
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  position: relative;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author .bs-author-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-radius: 100%;
+  border-right-color: var(--pri-color);
+  right: -1px;
+  transition: 0.65s;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author img.rounded-circle {
+  padding: 2px;
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author .designation {
+  font-size: 14px;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .bs-footer-widget-area .widget_post-author-widget .bs-author:hover .bs-author-img:before {
+  transform: rotate(360deg);
+}
 footer h3 {
   margin: 0 0 30px 0;
   font-size: 22px;

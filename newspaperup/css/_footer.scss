@@ -105,6 +105,72 @@ footer {
 		.row {
 			row-gap: 1.5rem;
 		}
+		.widget_post-author-widget { 
+            padding: 0px; 
+            font-weight: 500; 
+            transition: all 0.5s;
+            text-align: center;
+            ul.bs-social {
+                gap: 8px;
+                padding: 0;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .bs-author {
+                .inner{
+                    flex-direction: column;
+                    gap: 15px;
+                   .bs-author-info{
+                        margin-bottom: 10px;
+                    } 
+                }
+                &::before {
+                   content: unset;
+                }
+                .bs-author-img {
+                    border-radius: 100%;
+                    padding: 5px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        border-width: 3px;
+                        border-style: solid;
+                        border-bottom-color: transparent;
+                        border-left-color: transparent;
+                        border-top-color: transparent;
+                        border-radius: 100%;
+                        border-right-color: var(--pri-color);
+                        right: -1px;
+                        transition: 0.65s;
+                    }
+                }
+                img.rounded-circle {
+                    padding: 2px;
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                }
+                .designation{
+                    font-size: 14px;
+                }
+                p{
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                &:hover .bs-author-img:before{
+                    transform: rotate(360deg);
+                }
+            }            
+        }
 	}
 	h3 {
 		margin: 0 0 30px 0;

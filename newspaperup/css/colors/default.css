@@ -347,6 +347,12 @@ a:hover, a:focus {
 .bs-footer-bottom-area .bs-social li a {
 	color: var(--wtext-color);
 }
+.bs-footer-widget-area .bs-widget .bs-author .name {
+    color: var(--wtext-color);
+}
+.bs-footer-widget-area .bs-widget .bs-author .designation {
+    color: var(--wtext-color);
+}
 .bs-social li a:hover {
 	background: var(--pri-color);
 	color: #fff;
