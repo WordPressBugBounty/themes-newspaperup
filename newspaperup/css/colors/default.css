@@ -1135,6 +1135,9 @@ footer .bs-widget .bs-author p {
 footer .bs-recent-blog-post .small-post .img-small-post.right {
 	border-color: #fff;
 }
+footer .bs-widget-tags a, footer .tagcloud a, footer .wp-block-tag-cloud a {
+	color: var(--ftwtext-color);
+}
 footer .bs-recent-blog-post  .small-post .title a,
 footer .bs-recent-blog-post .small-post .title,
 footer .bs-recent-blog-post .bs-blog-meta a {

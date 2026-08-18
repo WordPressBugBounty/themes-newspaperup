@@ -4767,7 +4767,7 @@ footer .widget_newspaperup_featured_latest_news {
   margin: 4px !important;
   min-height: 10px;
   padding: 0 12px;
-  z-index: 999;
+  z-index: 99;
 }
 
 .woocommerce span.onsale {
@@ -4893,7 +4893,7 @@ footer .widget_newspaperup_featured_latest_news {
 
 .woocommerce ul.products li.product .woocommerce-loop-product__title {
   padding: 0.5em;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 .woocommerce ul.products li.product .woocommerce-loop-product__title a {
@@ -4962,7 +4962,6 @@ footer .newspaperup-widget .woocommerce ul.cart_list li img, footer .newspaperup
 
 .related.products h2 {
   font-size: 26px;
-  line-height: 40px;
 }
 
 /*woocommerce-form*/

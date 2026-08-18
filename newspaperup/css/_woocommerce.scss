@@ -18,7 +18,7 @@
 	margin: 4px !important;
 	min-height: 10px;
 	padding: 0 12px;
-	z-index: 999;
+	z-index: 99;
 }
 .woocommerce span.onsale {
 	margin: 10px !important;
@@ -124,7 +124,7 @@
 }
 .woocommerce ul.products li.product .woocommerce-loop-product__title{
 	padding: 0.5em;
-	font-size: 1.5rem;
+	font-size: 1.125rem;
 }
 .woocommerce ul.products li.product .woocommerce-loop-product__title a{
 	transition: all 0.3s;
@@ -178,7 +178,6 @@ footer .newspaperup-widget .woocommerce ul.cart_list li img, footer .newspaperup
 }
 .related.products h2 {
 	font-size: 26px;
-	line-height: 40px;
 }
 /*woocommerce-form*/
 .woocommerce form .form-row label {
