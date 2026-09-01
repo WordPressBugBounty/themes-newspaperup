@@ -74,6 +74,9 @@
 // missed slider
 .missedslider .bs-blog-post {
     box-shadow: none;
+	.inner .title-wrap{
+		margin-bottom: 0;
+	}
 
 	.bs-blog-category{
 		display: inline-flex;

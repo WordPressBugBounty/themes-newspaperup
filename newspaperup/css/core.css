@@ -2310,7 +2310,7 @@ footer.one .bs-footer-copyright {
 .bs-blog-post.three .inner {
   position: absolute;
   bottom: 0;
-  padding: 15px;
+  padding: 25px;
   z-index: 4;
   bottom: 0;
   right: 0;
@@ -2318,8 +2318,7 @@ footer.one .bs-footer-copyright {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  backdrop-filter: blur(8px);
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .bs-blog-post.three .inner:after {
   position: absolute;
@@ -2329,7 +2328,7 @@ footer.one .bs-footer-copyright {
   left: 0;
   top: 0;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 /* --blog--four-- */
@@ -2686,11 +2685,12 @@ footer.one .bs-footer-copyright {
   margin-bottom: 15px;
 }
 .bs-blog-post .title-wrap .title {
-  flex-basis: 78%;
+  flex-basis: 100%;
   margin-bottom: 0;
 }
 .bs-blog-post .title-wrap .btn-wrap {
   flex-shrink: 0;
+  display: none;
 }
 .bs-blog-post .title-wrap .btn-wrap a {
   width: 40px;
@@ -4465,6 +4465,9 @@ textarea#comment {
 
 .missedslider .bs-blog-post {
   box-shadow: none;
+}
+.missedslider .bs-blog-post .inner .title-wrap {
+  margin-bottom: 0;
 }
 .missedslider .bs-blog-post .bs-blog-category {
   display: inline-flex;
