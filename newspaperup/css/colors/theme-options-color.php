@@ -52,20 +52,17 @@ function theme_options_color() {
   <?php 
 }
 function newspaperup_customize_options() {
-    // Initialize string
-    $newspaperup_custom_css = '';
+  // Initialize string
+  $newspaperup_custom_css = '';
 
-    if (get_theme_mod('enable_newspaperup_typo', false) == true) {
-      $newspaperup_custom_css .= 'h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .wp-block-search__label {
-                          font-weight:'. newspaperup_get_option('heading_fontweight').' !important;
-                          font-family:'. newspaperup_get_option('heading_fontfamily').' !important;
-                        }';
-      $newspaperup_custom_css .= '.navbar-wp .sm-clean > li > a, .navbar-wp .dropdown-menu > li > a {
-                          font-weight:'. newspaperup_get_option('heading_fontweight').' !important;
-                          font-family:'. get_theme_mod('newspaperup_menu_fontfamily','Inter').' !important;
-                        }';
-    }
-    if ( ! empty( $newspaperup_custom_css ) ) {
-        wp_add_inline_style( 'newspaperup-style', $newspaperup_custom_css );
-    }
+  if (get_theme_mod('enable_newspaperup_typo', false) == true) {
+    $newspaperup_custom_css .= ':root {
+                        --Fontheading:'. newspaperup_get_option('heading_fontfamily').';
+                        --Weightheading:'. newspaperup_get_option('heading_fontweight').';
+                        --Fontmenus:'. newspaperup_get_option('newspaperup_menu_fontfamily').';
+                      }';
+  }
+  if ( ! empty( $newspaperup_custom_css ) ) {
+      wp_add_inline_style( 'newspaperup-style', $newspaperup_custom_css );
+  }
 }
