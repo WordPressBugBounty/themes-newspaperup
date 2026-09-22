@@ -147,7 +147,7 @@ final class Newspaperup_Customize {
 		wp_enqueue_media();
 
 		// Enqueue the customizer preview script.
-		wp_enqueue_script('newspaperup-customizer-preview', NEWSPAPERUP_THEME_URI . '/js/customizer.js', ['customize-preview'], NEWSPAPERUP_THEME_VERSION, true);
+		wp_enqueue_script('newspaperup-customizer-preview', NEWSPAPERUP_THEME_URI . 'js/customizer.js', ['customize-preview'], NEWSPAPERUP_THEME_VERSION, true);
 	}
 }
 // Doing this customizer thang!
