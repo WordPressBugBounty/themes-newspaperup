@@ -705,8 +705,8 @@ pre.wp-block-code a,
   position: absolute;
   content: "";
   height: calc(100% + 25px);
-  width: 0.1rem;
-  background-color: rgba(185, 185, 185, 0.4);
+  width: 1px;
+  background-color: var(--border-color);
   right: -2.5rem;
   left: -2.5rem;
   right: auto;
@@ -720,9 +720,9 @@ pre.wp-block-code a,
 #comments .comment-list .children > li:after {
   position: absolute;
   content: "";
-  height: 0.1rem;
+  height: 1px;
   width: 2.5rem;
-  background-color: rgba(185, 185, 185, 0.4);
+  background-color: var(--border-color);
   left: -2.5rem;
   right: auto;
   top: 5.5rem;

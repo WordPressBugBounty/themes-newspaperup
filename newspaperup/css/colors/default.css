@@ -248,7 +248,7 @@ body {
 }
 input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"], textarea {
 	color: #9b9ea8;
-	border-color: #eef3fb;
+	border-color: var(--border-color);
 }
 .form-control:hover, textarea:hover, input:not([type]):hover, input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="tel"]:hover, input[type="url"]:hover, input[type="text"]:hover, input:not([type]):focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="text"]:focus {
 	border-color: var(--pri-color);
@@ -993,7 +993,7 @@ border-color: var(--pri-color);
 }
 .navigation.pagination .nav-links .page-numbers, .navigation.pagination .nav-links a{ 
 	background: var(--box-color);
-	border-color: var(--stext-color);
+	border-color: var(--border-color);
 	color: var(--stext-color);
 }
 .navigation.pagination .nav-links .page-numbers.current, a.error-btn { 

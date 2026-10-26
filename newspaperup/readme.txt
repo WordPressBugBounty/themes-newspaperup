@@ -4,8 +4,8 @@ Author: Themeansar
 Requires at least: WordPress 6.7
 Tested up to: WordPress 7.0
 Requires PHP: 7.4
-Stable tag: 1.8.9
-Version: 1.8.9
+Stable tag: 1.9.0
+Version: 1.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets,  theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, news
@@ -365,3 +365,6 @@ License Url: https://stocksnap.io/license
 
 = Version 1.8.9
 * Optimized font assets by removing unused font files and compatibility assets.
+
+= Version 1.9.0
+* Fixed Styling Issue.
