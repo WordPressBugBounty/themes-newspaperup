@@ -191,8 +191,7 @@ if ( ! class_exists( 'Newspaperup_Theme_Setup' ) ) :
 			 *
 			 * @link https://developer.wordpress.org/themes/functionality/post-formats/
 			 */
-			add_theme_support( 'post-formats', array( 'image', 'video', 'gallery', 'audio' ) );
-			
+			add_theme_support( 'post-formats', array( 'image', 'video', 'gallery', 'audio' ) );			
 		
 		}
 

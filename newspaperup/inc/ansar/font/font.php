@@ -4,7 +4,6 @@
 /*--------------------------------------------------------------------*/
 add_action( 'wp_enqueue_scripts', 'newspaperup_theme_fonts',1 );
 add_action( 'enqueue_block_editor_assets', 'newspaperup_theme_fonts',1 );
-add_action( 'customize_preview_init', 'newspaperup_theme_fonts', 1 );
 
 function newspaperup_theme_fonts() {
     $url = newspaperup_fonts_url();
@@ -15,14 +14,40 @@ function newspaperup_theme_fonts() {
 }
 
 function newspaperup_fonts_url() {
-    $h = newspaperup_get_option( 'heading_fontfamily' );
-    $hw = newspaperup_get_option( 'heading_fontweight' );
-    $m = newspaperup_get_option( 'newspaperup_menu_fontfamily' );
-    $mw = get_theme_mod( 'newspaperup_menu_fontweight', '500' );
     
-    return add_query_arg( array(
-        'family'  => implode( '|', array_unique( array( "$h:$hw,700", "$m:$mw,400", 'Lexend Deca:500,600','Outfit:400,500' ) ) ),
-        'subset'  => 'latin,latin-ext',
-        'display' => 'swap',
-    ), 'https://fonts.googleapis.com/css' );
+    $fonts = array(
+        'Lexend Deca' => array( 400 , 500 , 600 , 700 , 800 ),
+        'Outfit'        => array( 300 , 400 , 500 , 600 ),
+    );
+
+
+    $requested = array(
+        array( newspaperup_get_option( 'heading_fontfamily' ), newspaperup_get_option( 'heading_fontweight' ) ),
+        array( newspaperup_get_option( 'newspaperup_menu_fontfamily' ), get_theme_mod( 'newspaperup_menu_fontweight', '500' ) ),
+    );
+
+    foreach ( $requested as list( $font, $weight ) ) {
+        $font   = trim( explode( ',', (string) $font )[0], " \t\n\r\0\x0B'\"" );
+        $weight = absint( $weight ) ?: 400;
+
+        if ( $font && $weight >= 100 && $weight <= 900 ) {
+            $fonts[ $font ][] = $weight;
+        }
+    }
+
+    $fonts = apply_filters( 'newspaperup_google_fonts', $fonts );
+    ksort( $fonts );
+
+    $families = array();
+
+    foreach ( $fonts as $font => $weights ) {
+        $weights = array_unique( array_filter( array_map( 'absint', (array) $weights ) ) );
+        sort( $weights, SORT_NUMERIC );
+
+        if ( $font && $weights ) {
+            $families[] = 'family=' . urlencode( $font ) . ':wght@' . implode( ';', $weights );
+        }
+    }
+
+    return $families ? 'https://fonts.googleapis.com/css2?' . implode( '&', $families ) . '&display=swap' : '';
 }
