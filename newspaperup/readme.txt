@@ -4,8 +4,8 @@ Author: Themeansar
 Requires at least: WordPress 6.7
 Tested up to: WordPress 7.0
 Requires PHP: 7.4
-Stable tag: 1.9.1
-Version: 1.9.1
+Stable tag: 1.9.2
+Version: 1.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets,  theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, news
@@ -371,3 +371,7 @@ License Url: https://stocksnap.io/license
 
 = Version 1.9.1
 * Fixed Google Fonts Loading Issue.
+
+= Version 1.9.2
+* Improved Author Info widget media uploader with image removal support.
+* Fixed PHP 8.1+ warnings and deprecated notices in Author Info widget.
